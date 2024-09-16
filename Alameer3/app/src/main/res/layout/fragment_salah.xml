@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layoutDirection="rtl"
+    android:layout_height="match_parent"
+    style="@style/backGround2"
+    tools:context=".activitys.fragmints.SalahFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="سلة المستريات"
+
+                    style="@style/textColor2Wite_black"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+            </LinearLayout>
+
+
+            <com.facebook.shimmer.ShimmerFrameLayout
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                app:shimmer_auto_start="true"
+                android:id="@+id/salah_loding"
+                android:layout_height="0dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+
+                    android:layout_height="match_parent">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layoutDirection="rtl"
+                        app:cardBackgroundColor="#dddddd"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginEnd="24dp"
+                        android:layout_marginTop="16dp"
+                       app:cardCornerRadius="15dp"
+                        android:layout_height="100dp">
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layoutDirection="rtl"
+                        app:cardBackgroundColor="#dddddd"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginEnd="24dp"
+                        android:layout_marginTop="16dp"
+                        app:cardCornerRadius="15dp"
+                        android:layout_height="100dp">
+
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layoutDirection="rtl"
+                        app:cardBackgroundColor="#dddddd"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginEnd="24dp"
+                        android:layout_marginTop="16dp"
+                        app:cardCornerRadius="15dp"
+                        android:layout_height="100dp">
+
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layoutDirection="rtl"
+                        app:cardBackgroundColor="#dddddd"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginEnd="24dp"
+                        android:layout_marginTop="16dp"
+                        app:cardCornerRadius="15dp"
+                        android:layout_height="100dp">
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+            </com.facebook.shimmer.ShimmerFrameLayout>
+
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:id="@+id/salah_conter"
+                android:visibility="gone"
+                android:layout_height="0dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginTop="50dp"
+                    android:visibility="gone"
+                    android:id="@+id/salah_sgin"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:textColor="@color/black"
+                        android:text="الرجاء تسجيل الدخول اولاً"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+                    <android.widget.Button
+                        android:background="@drawable/items_background1"
+                        android:textColor="@color/white"
+                        android:id="@+id/btn_salah_go_sgin"
+                        android:layout_marginTop="30dp"
+                        android:paddingStart="30dp"
+                        android:text="تسجيل الدخول"
+                        android:paddingEnd="30dp"
+                        android:layout_width="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_height="wrap_content">
+
+                    </android.widget.Button>
+                </LinearLayout>
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    style="@style/backGround2"
+                    android:id="@+id/list_salah"
+                    android:layout_height="0dp">
+
+                </androidx.recyclerview.widget.RecyclerView>
+
+
+            </LinearLayout>
+
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_marginBottom="70dp"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:padding="16dp"
+                    android:background="@drawable/items_background1"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginEnd="24dp"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="المبلغ الاجمالي"
+                        android:textColor="@color/white"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+
+
+                    <TextView
+                        android:id="@+id/totl_salah_cost"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:textColor="@color/red"
+                        android:gravity="end"
+                        android:layout_marginEnd="8dp"
+
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginEnd="50dp"
+                    android:layout_marginBottom="24dp"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content">
+
+
+
+                    <android.widget.Button
+                        android:layout_width="wrap_content"
+
+                        android:background="@drawable/items_background1"
+                        android:text="تحديث السلة"
+                        android:layout_marginEnd="4dp"
+                        android:textColor="@color/white"
+
+                        android:id="@+id/btn_refrish"
+
+                        android:layout_height="wrap_content">
+
+                    </android.widget.Button>
+                    <android.widget.Button
+                        android:layout_width="match_parent"
+
+                        android:background="@drawable/btn_back_black"
+                        android:text="الاكمال الى التوصيل"
+                        android:textColor="@color/white"
+
+                        android:id="@+id/btn_conton_bay"
+
+                        android:layout_height="wrap_content">
+
+                    </android.widget.Button>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/prog_salah"
+            android:layout_marginBottom="300dp"
+            android:layout_width="wrap_content"
+            android:visibility="gone"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+        </ProgressBar>
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

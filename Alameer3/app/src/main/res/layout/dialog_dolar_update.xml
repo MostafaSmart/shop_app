@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="rtl"
+    android:paddingStart="16dp"
+    android:paddingEnd="16dp"
+    android:paddingBottom="24dp"
+    android:background="@drawable/dialog_background2">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="تحديث سعر الصرف"
+        android:layout_gravity="center"
+        android:layout_margin="16dp"
+        android:textSize="20sp"
+        android:textColor="@color/red"
+        android:layout_height="wrap_content">
+
+    </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="سعر الشمال"
+
+            android:layout_height="wrap_content">
+
+        </TextView>
+        <EditText
+            android:layout_width="match_parent"
+            android:id="@+id/upDolar"
+            android:hint="صرف الشمال"
+            android:layout_marginTop="8dp"
+            android:layout_height="wrap_content">
+
+        </EditText>
+        <TextView
+            android:layout_marginTop="8dp"
+            android:layout_width="wrap_content"
+            android:text="سعر الجنوب"
+
+            android:layout_height="wrap_content">
+
+        </TextView>
+        <EditText
+            android:layout_width="match_parent"
+            android:id="@+id/downDolar"
+            android:hint="صرف الجنوب"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp"
+            android:layout_height="wrap_content">
+
+
+        </EditText>
+
+        <android.widget.Button
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/btn_back_black"
+            android:text="تحديث"
+            android:textColor="@color/white"
+            android:paddingStart="24dp"
+            android:id="@+id/btn_update_dolar"
+            android:layout_margin="16dp"
+            android:paddingEnd="26dp"
+            android:layout_height="wrap_content">
+
+        </android.widget.Button>
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:id="@+id/prog_dolar"
+            android:visibility="gone"
+            android:layout_height="wrap_content">
+
+        </ProgressBar>
+
+
+</LinearLayout>

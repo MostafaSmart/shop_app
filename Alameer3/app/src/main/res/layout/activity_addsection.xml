@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layoutDirection="rtl"
+    android:orientation="vertical"
+    android:id="@+id/addsec_heder"
+    android:layout_height="match_parent"
+    tools:context=".activitys.activty.AddsectionActivity">
+    <include layout="@layout/simple_heder"/>
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/prog_sec"
+        android:visibility="gone"
+        android:layout_height="wrap_content">
+
+    </ProgressBar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+            android:layout_width="match_parent"
+                android:orientation="horizontal"
+            android:layout_height="wrap_content">
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:text="تغير ترتيب الاقسام"
+                    android:id="@+id/chick_reorder_section"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:id="@+id/sec_parent"
+
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:padding="16dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="50dp"
+
+                    android:layout_margin="24dp"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="تعديل اسم قسم\n اختر القسم واكتب اسمه الجديد واضغط حفظ"
+                            android:layout_margin="16dp"
+                            android:layout_height="wrap_content">
+
+                        </TextView>
+                        <Spinner
+                            android:layout_width="match_parent"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginEnd="16dp"
+                            android:padding="16dp"
+                            android:id="@+id/select_section3"
+                            android:layout_height="wrap_content">
+
+                        </Spinner>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:hint="الاسم الجديد للقسم"
+                            android:id="@+id/input_newName"
+                            android:layout_height="wrap_content"
+                                                                />
+
+                        <android.widget.Button
+                            android:layout_width="match_parent"
+                            android:text="حفظ التعديل"
+                            android:background="@color/blue_lite"
+                            android:textColor="@color/white"
+                            android:id="@+id/btn_save_newNamw"
+                            android:layout_margin="16dp"
+                            android:layout_height="wrap_content">
+
+                        </android.widget.Button>
+
+                    </LinearLayout>
+
+
+
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:padding="16dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="50dp"
+
+                    android:layout_margin="24dp"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="اضافة قسم"
+                            android:layout_margin="16dp"
+                            android:layout_height="wrap_content">
+
+                        </TextView>
+                        <EditText
+                            android:layout_margin="16dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="اسم القسم"
+                            android:id="@+id/input_new_sectin"
+                            >
+
+                        </EditText>
+
+                        <android.widget.Button
+                            android:layout_width="match_parent"
+                            android:text="اضافة "
+                            android:background="@color/blue_lite"
+                            android:textColor="@color/white"
+                            android:id="@+id/btn_add_section"
+                            android:layout_margin="16dp"
+                            android:layout_height="wrap_content">
+
+                        </android.widget.Button>
+
+                    </LinearLayout>
+
+
+
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:padding="16dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="50dp"
+
+                    android:layout_margin="24dp"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="حذف قسم"
+                            android:layout_margin="16dp"
+                            android:layout_height="wrap_content">
+
+                        </TextView>
+                        <Spinner
+                            android:layout_width="match_parent"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginEnd="16dp"
+                            android:padding="16dp"
+                            android:id="@+id/select_section"
+                            android:layout_height="wrap_content">
+
+                        </Spinner>
+
+
+
+                        <android.widget.Button
+                            android:layout_width="match_parent"
+                            android:text="حذف "
+                            android:background="@color/blue_lite"
+                            android:textColor="@color/white"
+                            android:id="@+id/btn_delet_section"
+                            android:layout_margin="16dp"
+                            android:layout_height="wrap_content">
+
+                        </android.widget.Button>
+
+                    </LinearLayout>
+
+
+
+                </androidx.cardview.widget.CardView>
+
+
+
+            </LinearLayout>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:padding="16dp"
+                android:id="@+id/sec_parent2"
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp"
+                android:visibility="gone"
+                android:layout_margin="24dp"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="اختر القسم ورقمه بالترتيب \n يجب ان يتم اعادة ترتيب جميع الاقسام"
+                        android:layout_margin="16dp"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="القسم"
+                        android:layout_margin="16dp"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginEnd="16dp"
+                        android:padding="16dp"
+                        android:id="@+id/select_section3_name_order"
+                        android:layout_height="wrap_content">
+
+                    </Spinner>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="رقمة"
+                        android:layout_margin="16dp"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginEnd="16dp"
+                        android:padding="16dp"
+                        android:id="@+id/select_section3_number_order"
+                        android:layout_height="wrap_content">
+
+                    </Spinner>
+
+
+
+                    <android.widget.Button
+                        android:layout_width="match_parent"
+                        android:text="ترتيب"
+                        android:background="@color/blue_lite"
+                        android:textColor="@color/white"
+                        android:id="@+id/btn_save_newOrder"
+                        android:layout_margin="16dp"
+                        android:layout_height="wrap_content">
+
+                    </android.widget.Button>
+
+                    <android.widget.Button
+                        android:layout_width="match_parent"
+                        android:text="حفظ كل الترتيب"
+                        android:background="@color/blue_lite"
+                        android:textColor="@color/white"
+                        android:visibility="gone"
+                        android:id="@+id/btn_save_newOrder_final"
+                        android:layout_margin="16dp"
+                        android:layout_height="wrap_content">
+
+                    </android.widget.Button>
+
+
+
+                </LinearLayout>
+
+
+
+            </androidx.cardview.widget.CardView>
+            <EditText
+                android:layout_width="match_parent"
+                android:id="@+id/summary_secton_order"
+                android:visibility="gone"
+                android:enabled="false"
+                android:layout_height="wrap_content">
+
+            </EditText>
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+</LinearLayout>

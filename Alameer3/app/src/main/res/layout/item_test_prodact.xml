@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="190dp"
+    android:layout_marginEnd="2dp"
+    android:layout_marginBottom="4dp"
+    android:layout_marginTop="4dp"
+
+    style="@style/MyCard"
+    app:cardUseCompatPadding="true"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp"
+    android:layoutDirection="rtl"
+    android:layout_height="265dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:id="@+id/prod3_img"
+            android:src="@drawable/whatsapp_icon_2_36x36"
+            android:scaleType="centerCrop"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-16dp"
+            android:id="@+id/prod_paran_d"
+            android:layout_marginLeft="8dp"
+
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="2dp">
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/background_red_round"
+
+                android:id="@+id/prod3_dcount_pres"
+                android:paddingStart="4dp"
+                android:paddingEnd="4dp"
+                android:visibility="gone"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/font_size_micro" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                app:cardCornerRadius="30dp"
+
+                android:layout_alignParentEnd="true"
+                android:layout_height="wrap_content"
+               >
+
+                <ImageView
+                    android:id="@+id/hart_icon_show"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+
+                    android:padding="8dp"
+                    android:src="@drawable/hart_of"
+                    />
+            </androidx.cardview.widget.CardView>
+
+
+        </RelativeLayout>
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:orientation="horizontal"
+           android:layout_height="wrap_content">
+
+           <LinearLayout
+               android:layout_width="0dp"
+               android:layout_weight="1"
+               android:layout_gravity="start"
+               android:orientation="vertical"
+               android:layout_height="wrap_content">
+
+               <TextView
+
+
+                    android:layout_marginStart="2dp"
+                   android:layout_width="wrap_content"
+                   android:textSize="@dimen/font_size_micro"
+                    android:layout_gravity="start"
+                   android:id="@+id/prod3_dcount"
+                   android:textColor="@color/blue_lite"
+                   android:layout_height="wrap_content">
+
+
+               </TextView>
+           </LinearLayout>
+
+<LinearLayout
+    android:layout_width="0dp"
+    android:layout_weight="1"
+    android:layout_gravity="end"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/prod3_price"
+        android:gravity="end"
+        android:textSize="@dimen/font_size_micro"
+        style="@style/textColor2Wite_black"
+        android:layout_marginEnd="2dp"
+        android:layout_gravity="end"
+
+        />
+
+</LinearLayout>
+
+
+       </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="4dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+
+                style="@style/textColor2Wite_black"
+                android:textSize="@dimen/font_size_small"
+
+                android:maxLines="2"
+                android:textStyle="bold"
+
+                android:id="@+id/prod3_name"
+
+                 />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                style="@style/textColor1Wite_black"
+                android:id="@+id/prod3_desc"
+                android:textColor="#a4a7b5"
+                android:maxLines="2"
+                android:textSize="@dimen/font_size_nano" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
+

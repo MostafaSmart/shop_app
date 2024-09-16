@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".activitys.activty.ProfileActivity"
+    android:layout_width="match_parent"
+    android:layoutDirection="rtl"
+    style="@style/backGround2"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                style="@style/backGround2"
+
+                android:layout_height="match_parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraintLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:background="@color/black"
+                        android:orientation="vertical"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="50dp"
+                            android:src="@drawable/bayname_icon">
+
+                        </ImageView>
+
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/back_profile"
+                        android:src="@drawable/black_back_icon"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                    </ImageView>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+
+                    style="@style/MyCard"
+                    android:layout_marginEnd="16dp"
+
+
+                    app:cardCornerRadius="10dp">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+
+                        android:orientation="vertical"
+
+                        android:paddingBottom="16dp">
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+
+
+
+                            android:layout_height="wrap_content"
+
+                            style="@style/MyTextInputLayout"
+
+
+                            android:layout_marginTop="16dp"
+                            android:layout_marginEnd="40dp"
+
+                            >
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/show_page_name"
+                                android:layout_width="match_parent"
+
+                                android:layout_height="wrap_content"
+
+
+
+                                android:hint="الاسم"
+                                style="@style/textColor2Wite_black"
+                                android:inputType="text"
+
+                                tools:ignore="TouchTargetSizeCheck" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+
+                            android:layout_height="wrap_content"
+
+                            style="@style/MyTextInputLayout"
+
+                            android:layout_marginTop="16dp"
+                            android:layout_marginEnd="40dp"
+
+                            >
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/show_page_email"
+
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+
+                                style="@style/textColor2Wite_black"
+
+                                android:enabled="false"
+                                android:hint="البريد الالكتروني"
+                                android:inputType="textEmailAddress"
+
+                                tools:ignore="TouchTargetSizeCheck" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <Spinner
+                            android:id="@+id/show_page_loaction"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginEnd="30dp"
+
+                            style="@style/MySpinner"
+                            android:paddingTop="16dp"
+                            android:paddingBottom="16dp">
+
+                        </Spinner>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+
+
+                            android:layout_height="wrap_content"
+
+                            style="@style/MyTextInputLayout"
+
+
+                            android:layout_marginTop="16dp"
+                            android:layout_marginEnd="40dp"
+
+                            >
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/show_page_phone"
+                                android:layout_width="match_parent"
+
+                                android:layout_height="wrap_content"
+
+
+                                style="@style/textColor2Wite_black"
+
+                                android:hint="رقم الهاتف"
+                                android:inputType="phone"
+
+                                tools:ignore="TouchTargetSizeCheck" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+                <ProgressBar
+                    android:layout_width="wrap_content"
+                    android:layout_margin="16dp"
+                    android:visibility="gone"
+                    android:id="@+id/prog_profile"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content">
+
+                </ProgressBar>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:orientation="vertical"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/cardView">
+
+                    <android.widget.Button
+                        android:id="@+id/btn_updite_profile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:layout_marginTop="40dp"
+                        android:layout_marginEnd="50dp"
+                        android:background="@drawable/btn_blue_background"
+                        android:text="تحديث معلومات الحساب"
+                        android:textColor="@color/white">
+
+                    </android.widget.Button>
+
+                    <android.widget.Button
+                        android:id="@+id/add_Logout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginEnd="50dp"
+
+                        android:background="@drawable/btn_blue_background"
+                        android:text="تسجيل خروج"
+                        android:textColor="@color/white" />
+
+                    <android.widget.Button
+                        android:id="@+id/add_delete_acount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginEnd="50dp"
+
+                        android:background="@drawable/btn_blue_background"
+                        android:text="حذف الحساب"
+                        android:textColor="@color/white" />
+
+                    <android.widget.Button
+                        android:id="@+id/add_prod"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/btn_blue_background"
+                        android:textColor="@color/white"
+                        android:layout_marginTop="8dp"
+
+                        android:layout_gravity="center"
+                        android:text="اضافة منتج"
+                        android:visibility="gone" />
+
+                    <android.widget.Button
+                        android:id="@+id/on_add_section"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/btn_blue_background"
+                        android:textColor="@color/white"
+                        android:layout_marginTop="8dp"
+
+                        android:layout_gravity="center"
+                        android:text="ادارة الاقسام"
+                        android:visibility="gone" />
+                </LinearLayout>
+                <android.widget.Button
+                    android:id="@+id/on_update_dolar"
+                    android:layout_width="wrap_content"
+                    android:background="@drawable/btn_blue_background"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="8dp"
+
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="تحديث سعر الصرف"
+                    android:visibility="gone" />
+
+
+
+
+                <android.widget.Button
+                    android:id="@+id/on_stop_prod"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+
+                    android:background="@drawable/btn_blue_background"
+                    android:textColor="@color/white"
+                    android:layout_gravity="center"
+                    android:text="عرض المنتجات المخفية"
+                    android:visibility="gone" />
+
+                <android.widget.Button
+                    android:id="@+id/on_banal_upd"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="8dp"
+
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_blue_background"
+                    android:textColor="@color/white"
+                    android:layout_gravity="center"
+                    android:text="ادارة الاعلانات"
+                    android:visibility="gone" />
+
+                <android.widget.Button
+                    android:id="@+id/on_nave"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/btn_blue_background"
+                    android:textColor="@color/white"
+                    android:layout_gravity="center"
+                    android:text="تصفية الاعلانات"
+                    android:visibility="gone" />
+
+                <android.widget.Button
+                    android:id="@+id/btn_number_vald"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/btn_blue_background"
+                    android:textColor="@color/white"
+                    android:layout_gravity="center"
+                    android:text="اراسال اشعارات"
+                    android:visibility="gone" />
+
+                <android.widget.Button
+                    android:id="@+id/btn_number_vald22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/btn_blue_background"
+                    android:textColor="@color/white"
+                    android:layout_gravity="center"
+                    android:text="تحقق الادمن"
+                    android:visibility="gone" />
+
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

@@ -1,0 +1,544 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layoutDirection="rtl"
+    android:layout_height="match_parent"
+    tools:context=".activitys.fragmints.MypageFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        style="@style/backGround2"
+
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:elevation="8dp"
+            style="@style/backGround2"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:text="صفحتي"
+                style="@style/textColor2Wite_black"
+                android:textStyle="bold"
+                android:layout_height="wrap_content">
+
+            </TextView>
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+                <LinearLayout
+                    android:id="@+id/acount_profile"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:paddingTop="16dp"
+
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:paddingBottom="8dp"
+
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/pr_username_text"
+                        android:textSize="15sp"
+
+                        style="@style/textColor2Wite_black"
+                        android:text="username"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+                    <TextView
+                        android:id="@+id/pr_email_text"
+                        android:layout_width="wrap_content"
+                        android:text="email"
+                        style="@style/textColor1Wite_black"
+                        android:layout_marginBottom="8dp"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+                    <View
+                        android:layout_width="match_parent"
+                        android:background="@color/blue_lite"
+                        android:layout_height="1dp">
+
+                    </View>
+                </LinearLayout>
+                <android.widget.Button
+                    android:id="@+id/btn_login_prf"
+                    android:layout_width="match_parent"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:layout_marginTop="16dp"
+                    android:text="تسجيل حساب"
+
+                    android:background="@drawable/btn_back_black"
+                    android:layout_height="wrap_content">
+
+                </android.widget.Button>
+                <LinearLayout
+                    android:visibility="gone"
+                    android:layout_margin="16dp"
+                    android:id="@+id/show_cosr_orders"
+                    android:layout_width="match_parent"
+
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="10dp"
+                    android:background="@drawable/items_background1">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_baseline_add_shopping_cart_24"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginEnd="8dp"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="طلباتي"
+                        android:textColor="@color/white"
+
+
+                        android:textSize="16sp"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/go_icon"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="8dp"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:visibility="gone"
+                    android:layout_margin="16dp"
+                    android:id="@+id/contorys_citys"
+                    android:layout_width="match_parent"
+
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="10dp"
+                    android:background="@drawable/items_background1">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_baseline_add_shopping_cart_24"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginEnd="8dp"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="المحافضات والمناطق"
+                        android:textColor="@color/white"
+
+
+                        android:textSize="16sp"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/go_icon"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="8dp"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="لماذا نحن"
+                    android:textSize="24sp"
+                    style="@style/textColor1Wite_black"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    style="@style/backGround1"
+                    android:orientation="horizontal"
+                    android:padding="5dp"
+                    android:layout_margin="10dp">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:background="#FFFFFF"
+                        android:padding="5dp"
+                        android:layout_marginRight="5dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:src="@drawable/mony_icon" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="اسعار منافسة"
+                            android:textSize="14sp"
+                            android:gravity="center" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:background="#FFFFFF"
+                        android:padding="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:src="@drawable/qualty_icon" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="جودة عالية"
+                            android:textSize="14sp"
+                            android:gravity="center" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:background="#FFFFFF"
+                        android:padding="5dp"
+                        android:layout_marginLeft="5dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:src="@drawable/offers_icon" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="عروض مستمرة"
+                            android:textSize="14sp"
+                            android:gravity="center" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+
+                    android:padding="10dp">
+
+                    <!-- عنصر 1 -->
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        style="@style/MyCard"
+                        app:cardCornerRadius="10dp"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:id="@+id/opt_1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:padding="10dp"
+                            >
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/about_icon"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginEnd="8dp"/>
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="معلومات عنا"
+                                style="@style/textColor2Wite_black"
+                                android:textSize="16sp"/>
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/go_icon"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginStart="8dp"/>
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+
+                    <!-- عنصر 2 -->
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        style="@style/MyCard"
+                        app:cardCornerRadius="10dp"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:id="@+id/opt_2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:padding="10dp"
+                           >
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/privacy_icon"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginEnd="8dp"/>
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="سياسة الخصوصية"
+                                style="@style/textColor2Wite_black"
+                                android:textSize="16sp"/>
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/go_icon"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginStart="8dp"/>
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <!-- عنصر 3 -->
+
+
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        style="@style/MyCard"
+                        app:cardCornerRadius="10dp"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:id="@+id/opt_3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:padding="10dp"
+                            >
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/program_icon"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginEnd="8dp"/>
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="معلومات عن مطور التطبيق"
+                                style="@style/textColor2Wite_black"
+                                android:textSize="16sp"/>
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/go_icon"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginStart="8dp"/>
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+
+                    <!-- عنصر 4 -->
+                    <LinearLayout
+
+                        android:id="@+id/opt_4"
+                        android:onClick="otion"
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="10dp"
+                        android:background="@drawable/items_background1">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_baseline_add_shopping_cart_24"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginEnd="8dp"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="عنوان الخيار 4"
+                            android:textColor="#000000"
+                            android:textSize="16sp"/>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/icon_profile"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="8dp"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginTop="40dp"
+                    android:layout_weight="1"
+                    android:layout_height="0dp">
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:paddingStart="16dp"
+                        android:paddingEnd="16dp"
+                        android:orientation="horizontal"
+                        android:layout_height="wrap_content">
+
+                        <android.widget.Button
+                            android:id="@+id/brn_whatsapp"
+                            android:layout_width="0dp"
+
+
+
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:padding="8dp"
+
+
+                            android:text="خدمة العملاء"
+                            android:textSize="16sp"
+                            android:drawableStart="@drawable/whatsapp_icon_2_36x36"
+                            android:textColor="@color/white"
+
+                            android:background="@drawable/items_background1"/>
+                        <View
+                            android:layout_width="16dp"
+                            android:layout_height="1dp"/>
+
+                        <android.widget.Button
+                            android:id="@+id/btn_facebook"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:padding="8dp"
+                            android:drawableStart="@drawable/facebook_icon_36x36"
+                            android:text="صفحتنا على"
+
+                            android:textColor="@color/white"
+
+
+                            android:textSize="16sp"
+                            android:background="@drawable/items_background1"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginTop="24dp"
+                        android:layout_width="match_parent"
+                        android:paddingStart="16dp"
+
+                        android:paddingEnd="16dp"
+                        android:orientation="horizontal"
+                        android:layout_height="wrap_content">
+
+                        <android.widget.Button
+                            android:id="@+id/btn_instagram"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:padding="8dp"
+
+                            android:drawableStart="@drawable/instagram_icon_36x36"
+                            android:text="صفحتنتا على"
+                            android:textSize="16sp"
+
+                            android:textColor="@color/white"
+
+                            android:background="@drawable/items_background1"/>
+                        <View
+                            android:layout_width="16dp"
+                            android:layout_height="1dp"/>
+
+                        <android.widget.Button
+                            android:id="@+id/btn_telegram"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:padding="8dp"
+                            android:drawableStart="@drawable/call_icon"
+                            android:text="اتصل بنا"
+                           android:textColor="@color/white"
+
+                            android:textSize="16sp"
+
+                            android:background="@drawable/items_background1"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="SMART TECH "
+                    android:textColor="@color/blue_lite_300"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+
+            </LinearLayout>
+        </ScrollView>
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

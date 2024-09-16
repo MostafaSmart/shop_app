@@ -1,0 +1,690 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    tools:ignore="MissingPrefix"
+    android:layoutDirection="rtl"
+    style="@style/backGround2"
+    android:layout_width="match_parent"
+    tools:context=".activitys.activty.ShowActivity"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/toolbar_lay"
+        layout="@layout/tool_bar_no_round" />
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/shim_show"
+        android:layout_width="match_parent"
+        app:shimmer_auto_start="true"
+
+        app:shimmer_clip_to_children="true"
+
+
+
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                app:cardBackgroundColor="#dddddd"
+                android:layout_height="250dp">
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="200dp"
+                app:cardBackgroundColor="#dddddd"
+                android:layout_margin="24dp"
+                android:layout_height="20dp">
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="200dp"
+                app:cardBackgroundColor="#dddddd"
+                android:layout_margin="24dp"
+                android:layout_height="20dp">
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="200dp"
+                app:cardBackgroundColor="#dddddd"
+                android:layout_margin="24dp"
+                android:layout_height="20dp">
+
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+    </com.facebook.shimmer.ShimmerFrameLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/linearLayout4"
+
+        android:visibility="gone"
+        android:layout_above="@+id/linearLayout4"
+        android:layout_below="@id/toolbar_lay"
+        android:layout_height="match_parent"
+        tools:ignore="NotSibling">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:clipToPadding="false"
+            android:id="@+id/scrol_show"
+            android:overScrollMode="never"
+            android:paddingBottom="@dimen/spacing_standard_new">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+
+                    android:layout_height="@dimen/_200sdp">
+
+                    <androidx.viewpager.widget.ViewPager
+                        android:id="@+id/view_pager_img_show"
+                        android:layout_width="match_parent"
+                        android:layoutDirection="rtl"
+
+                        android:layout_height="match_parent"
+                        />
+
+
+                    <com.tbuonomo.viewpagerdotsindicator.WormDotsIndicator
+                        android:id="@+id/worm_dots_indicator"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:dotsColor="@color/blue_lite"
+                        app:dotsCornerRadius="8dp"
+                        app:dotsSize="10dp"
+
+
+
+                        android:layout_gravity="bottom|center_horizontal"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="8dp"
+                        app:dotsSpacing="4dp"
+                        app:dotsStrokeColor="@color/blue_lite"
+                        app:dotsStrokeWidth="2dp"
+                        />
+
+                </FrameLayout>
+
+                <LinearLayout
+                    android:id="@+id/admin_prodactMa"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <Spinner
+                        android:id="@+id/show_sizes_prodacts"
+
+
+                        android:visibility="gone"
+                        style="@style/Widget.AppCompat.Spinner"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="?attr/dropdownListPreferredItemHeight"
+                        android:layout_margin="10dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:background="@drawable/spinner_bg"
+                        android:dropDownWidth="300dp"
+                        android:dropDownVerticalOffset="?attr/dropdownListPreferredItemHeight"
+                        android:paddingRight="14dp"
+                        android:popupBackground="@android:color/white"
+                        android:popupElevation="3dp"
+                        android:stateListAnimator="@drawable/spinner_sla"
+                        android:layoutDirection="rtl"
+
+                        tools:listitem="@layout/spiner_layoyt"
+                        />
+                    <Spinner
+                        android:id="@+id/show_color_prodacts"
+
+                        android:visibility="gone"
+                        style="@style/Widget.AppCompat.Spinner"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="?attr/dropdownListPreferredItemHeight"
+                        android:layout_margin="10dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:background="@drawable/spinner_bg"
+                        android:dropDownWidth="300dp"
+                        android:dropDownVerticalOffset="?attr/dropdownListPreferredItemHeight"
+                        android:paddingRight="14dp"
+                        android:popupBackground="@android:color/white"
+                        android:popupElevation="3dp"
+                        android:stateListAnimator="@drawable/spinner_sla"
+                        android:layoutDirection="rtl"
+
+                        tools:listitem="@layout/spiner_layoyt" />
+                    <android.widget.Button
+                        android:id="@+id/btn_prod_delete"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:text="حذف المنتج">
+
+                    </android.widget.Button>
+
+                    <android.widget.Button
+                        android:id="@+id/btn_prod_update"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:text="تعديل المنتج">
+
+                    </android.widget.Button>
+
+                    <android.widget.Button
+                        android:id="@+id/btn_prod_state"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:text="اظهار / اخفاء">
+
+                    </android.widget.Button>
+
+
+                </LinearLayout>
+
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:padding="@dimen/spacing_standard"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:id="@+id/sec_total"
+                        android:layout_height="wrap_content">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="القسم"
+                            style="@style/textColor2Wite_black"
+                            android:id="@+id/section_name"
+                            android:textSize="@dimen/font_size_nano"
+                            android:textColor="@color/red"
+                            android:layout_gravity="center"
+
+                            android:paddingEnd="@dimen/spacing_standard"
+                            android:paddingStart="@dimen/spacing_standard"
+                            android:background="@drawable/item_border"
+                            android:layout_height="wrap_content"/>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+
+                            android:paddingEnd="@dimen/spacing_standard"
+                            android:paddingStart="@dimen/spacing_standard"
+                            android:background="@drawable/item_border"
+                            android:layout_marginStart="@dimen/spacing_standard_new"
+
+                            android:id="@+id/l_Totoale"
+
+
+                            android:layout_height="wrap_content"
+
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                style="@style/textColor1Wite_black"
+                                android:text=" الكمية المتوفرة : "
+                                android:textSize="@dimen/font_size_micro">
+
+                            </TextView>
+
+                            <TextView
+                                android:id="@+id/show_prod_hasmuch"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+
+                                android:layout_marginStart="@dimen/spacing_standard"
+
+                                android:text="45"
+                                android:textColor="@color/blue_lite"
+                                android:textSize="@dimen/font_size_micro">
+
+                            </TextView>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/price_des"
+                        android:layout_below="@+id/sec_total"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/show_prod_prcent"
+                            android:layout_width="wrap_content"
+                            android:layout_marginStart="16dp"
+
+
+                            android:visibility="gone"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:textStyle="bold"
+                            android:layout_marginEnd="16dp"
+                            android:textColor="@color/red"
+                            />
+
+                        <TextView
+                            android:id="@+id/show_prod_price"
+                            android:layout_width="wrap_content"
+
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+
+                            android:text=""
+                            android:layout_marginEnd="16dp"
+                            style="@style/textColor2Wite_black"
+                            android:textSize="@dimen/font_size_small">
+
+                        </TextView>
+
+                        <TextView
+                            android:id="@+id/show_prod_decount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:layout_marginEnd="16dp"
+
+                            android:text=""
+                            android:textColor="@color/red"
+                            android:textSize="@dimen/font_size_small">
+
+                        </TextView>
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:text=""
+                                android:layout_gravity="end"
+                                android:textStyle="bold"
+                                android:textSize="@dimen/font_size_small"
+                                android:textColor="@color/purple_500"
+                                android:id="@+id/timer_end_text"
+                                android:layout_height="wrap_content">
+
+                            </TextView>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <TextView
+                        style="@style/textColor2Wite_black"
+                        android:layout_width="wrap_content"
+                        android:id="@+id/show_prod_name"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/price_des"
+                        android:text="اسم المنتج الاول"
+                        android:textSize="@dimen/font_size_small"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:id="@+id/show_prod_about"
+                        android:layout_width="wrap_content"
+
+                        android:layout_below="@+id/show_prod_name"
+                        style="@style/textColor1Wite_black"
+
+                        android:layout_height="wrap_content"
+                        />
+
+
+                    <!--                <View-->
+                    <!--                    android:layout_width="match_parent"-->
+                    <!--                    android:background="@color/red"-->
+                    <!--                    android:layout_below="@id/show_prod_name"-->
+                    <!--                    android:layout_height="1dp">-->
+                    <!--                    -->
+                    <!--                </View>-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/spacing_small"
+                        android:layout_marginTop="@dimen/spacing_standard"
+                        android:id="@+id/countss"
+                        android:layout_below="@+id/show_prod_name"
+
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:orientation="horizontal"
+                            >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                style="@style/textColor2Wite_black"
+
+                                android:text="الكمية">
+
+                            </TextView>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/spacing_standard"
+                                android:background="@drawable/item_border"
+                                android:orientation="horizontal"
+                                android:paddingStart="10dp"
+                                android:paddingTop="4dp"
+
+
+                                android:paddingEnd="10dp"
+                                android:paddingBottom="4dp">
+
+                                <android.widget.Button
+                                    android:id="@+id/count_minas"
+                                    android:layout_width="41dp"
+
+                                    android:layout_height="40dp"
+                                    android:text="--"
+
+
+                                    android:textStyle="bold">
+
+                                </android.widget.Button>
+
+                                <TextView
+                                    android:id="@+id/order_mach"
+                                    android:layout_width="50dp"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    style="@style/textColor2Wite_black"
+
+                                    android:inputType="number"
+                                    android:text="1"
+                                    android:textSize="17sp"
+                                    android:textStyle="bold">
+
+                                </TextView>
+
+                                <android.widget.Button
+                                    android:id="@+id/count_add"
+                                    android:layout_width="41dp"
+                                    android:layout_height="40dp"
+                                    android:drawableStart="@drawable/add_icon"
+                                    android:gravity="center">
+
+                                </android.widget.Button>
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:id="@+id/l_size"
+                        android:layout_marginTop="@dimen/spacing_standard"
+
+                        android:layout_below="@id/countss"
+                        android:layout_height="wrap_content">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:id="@+id/txtsize"
+                            style="@style/textColor1Wite_black"
+                            android:text="المقاسات : "
+
+                            android:layout_height="wrap_content"/>
+
+                        <com.google.android.material.chip.ChipGroup
+                            android:layout_width="match_parent"
+                            android:id="@+id/ChipGroupSize_"
+                            app:singleSelection="true"
+                            android:layout_height="wrap_content">
+
+                        </com.google.android.material.chip.ChipGroup>
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_marginTop="@dimen/spacing_standard"
+
+                        android:id="@+id/l_color"
+                        android:layout_below="@id/l_size"
+                        android:layout_height="wrap_content">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            style="@style/textColor1Wite_black"
+                            android:text="الالوان : "
+
+                            android:layout_height="wrap_content"/>
+
+                        <com.google.android.material.chip.ChipGroup
+                            android:layout_width="match_parent"
+                            android:id="@+id/ChipGroupColor_"
+                            android:layout_height="wrap_content">
+
+                        </com.google.android.material.chip.ChipGroup>
+
+
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_below="@id/l_color"
+                        android:id="@+id/l_Totoal"
+                        android:padding="@dimen/spacing_standard">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            style="@style/textColor1Wite_black"
+
+
+                            android:layout_height="wrap_content"
+                            android:text="اجمالي السعر :">
+
+                        </TextView>
+
+                        <TextView
+                            android:id="@+id/total_cost"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="40dp"
+                            android:text="50000"
+                            android:textColor="@color/blue_lite_300"
+                            android:textSize="@dimen/font_size_small"
+                            android:textStyle="bold">
+
+                        </TextView>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:layout_below="@id/l_Totoal"
+                        android:paddingBottom="16dp"
+                        android:layout_marginBottom="16dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginBottom="16dp"
+                            android:text="منتجات ذات صلة"
+                            style="@style/textColor2Wite_black"
+
+                            >
+
+                        </TextView>
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/list_show_1"
+
+
+                            android:layout_width="match_parent"
+                            android:layout_marginBottom="20dp"
+                            android:layout_height="match_parent" />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+
+
+
+            </LinearLayout>
+
+        </ScrollView>
+    </LinearLayout>
+
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:id="@+id/prog_add_to_cart"
+        android:layout_centerInParent="true"
+
+        android:visibility="gone"
+        android:layout_height="wrap_content"
+   >
+
+    </ProgressBar>
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+
+        android:visibility="gone"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentBottom="true"
+
+        android:elevation="8dp"
+        android:orientation="horizontal"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:paddingTop="8dp"
+        android:backgroundTint="@color/liteBlack2"
+        android:background="@drawable/items_background1"
+   >
+
+
+
+        <android.widget.Button
+            android:id="@+id/btn_add_to_bag"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:layout_weight="0.5"
+            android:background="@drawable/btb_black2"
+            android:text="اضافة الى السلة"
+            android:textColor="@color/white">
+
+        </android.widget.Button>
+
+        <android.widget.Button
+            android:id="@+id/btn_buy_now"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:layout_marginBottom="4dp"
+            android:layout_weight="0.5"
+            android:background="@drawable/btn_back_blue2"
+            android:text="شراء الان"
+            android:textColor="@color/white">
+
+        </android.widget.Button>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_gravity="end"
+                android:text="اجمالي السعر"
+                android:textSize="13sp"
+                android:textColor="@color/white"
+
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="12 ريال"
+                android:id="@+id/tezt_show_total"
+                android:layout_gravity="end"
+                android:textSize="17sp"
+                android:layout_marginEnd="8dp"
+                android:textColor="@color/blue_lite_300"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+
+
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
+
+
+
+
+
+

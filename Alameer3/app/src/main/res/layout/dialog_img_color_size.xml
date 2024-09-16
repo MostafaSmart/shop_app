@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="rtl"
+    android:paddingStart="16dp"
+    android:paddingEnd="16dp"
+    android:paddingBottom="24dp"
+    android:background="@drawable/dialog_background">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="قم بتحديد "
+        android:textColor="@color/red"
+        android:textSize="25sp"
+        android:id="@+id/tital_dialog"
+        android:layout_margin="16dp"
+        android:layout_height="wrap_content"/>
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_margin="16dp"
+        android:padding="16dp"
+        android:id="@+id/choos_color_size_img"
+        android:layout_height="wrap_content">
+
+    </Spinner>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:padding="16dp"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:id="@+id/btn_finsh_connect_img"
+            android:text="حفظ الربط"
+            android:background="@drawable/btn_blue_background"
+            android:textColor="@color/white"
+            android:layout_marginEnd="50dp"
+            android:layout_height="wrap_content">
+
+        </androidx.appcompat.widget.AppCompatButton>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:id="@+id/btn_cansel_connect_img"
+            android:text="الغاء"
+            android:background="@drawable/btn_back_black"
+            android:textColor="@color/white"
+            android:layout_marginEnd="16dp"
+            android:layout_height="wrap_content">
+
+        </androidx.appcompat.widget.AppCompatButton>
+    </LinearLayout>
+</LinearLayout>

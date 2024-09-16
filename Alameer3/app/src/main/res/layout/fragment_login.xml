@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/backGround1"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".activitys.fragmints.LoginFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+
+
+                android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="vertical"
+                            android:layout_height="wrap_content">
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="8dp"
+                                style="@style/MyTextInputLayout"
+
+
+
+                                android:layout_marginStart="16dp"
+                                android:layout_marginEnd="16dp"
+                                >
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/login_email_input"
+                                    android:inputType="textEmailAddress"
+
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+
+
+
+
+                                    android:shadowColor="@color/liteBlack"
+                                    style="@style/textColor1Wite_black"
+                                    android:hint="البريد الالكتروني"
+                                    tools:ignore="TouchTargetSizeCheck" />
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="8dp"
+                                style="@style/MyTextInputLayout"
+
+                                android:layout_marginStart="16dp"
+                                android:layout_marginEnd="16dp"
+                                >
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/login_password_input"
+                                    android:inputType="textVisiblePassword"
+
+
+                                    android:cursorVisible="true"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    style="@style/textColor1Wite_black"
+                                    android:hint="كلمة المرور"
+                                    tools:ignore="TouchTargetSizeCheck" />
+                            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+
+                        </LinearLayout>
+
+                        <ProgressBar
+                            android:visibility="gone"
+                            android:layout_width="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="16dp"
+                            android:id="@+id/prog_login"
+                            android:layout_height="wrap_content">
+
+                        </ProgressBar>
+
+
+                        <android.widget.Button
+                            android:id="@+id/btn_login"
+                            android:layout_width="match_parent"
+                            android:layout_marginStart="30dp"
+                            android:layout_marginEnd="30dp"
+                            android:layout_marginTop="24dp"
+                            android:text="تسجيل الدخول"
+                            android:background="@drawable/btn_back_black"
+                            android:textColor="@color/white"
+
+                            android:layout_height="match_parent">
+
+                        </android.widget.Button>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="هل نسيت كلمة المرور ؟ اضغط هنا"
+                            android:layout_gravity="center"
+                            style="@style/textColor1Wite_black"
+                            android:layout_marginTop="8dp"
+                            android:outlineSpotShadowColor="@color/blue_lite"
+                            android:id="@+id/text_rest_password"
+                            android:layout_height="wrap_content">
+
+                        </TextView>
+                        <android.widget.Button
+                            android:id="@+id/btn_login_google"
+                            android:layout_width="wrap_content"
+                            android:layout_marginStart="30dp"
+                            android:layout_gravity="center"
+                            android:paddingStart="24dp"
+                            android:paddingEnd="24dp"
+
+                            android:drawableEnd="@drawable/google_icon"
+                            android:layout_marginEnd="30dp"
+                            android:layout_marginTop="24dp"
+                            android:text="   الدخول باستخدام"
+
+                            android:background="@drawable/btn_back_wite"
+                            android:textColor="@color/black"
+
+                            android:layout_height="match_parent">
+
+                        </android.widget.Button>
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="او"
+                            android:layout_marginTop="24dp"
+                          style="@style/textColor1Wite_black"
+                            android:layout_height="wrap_content">
+
+                        </TextView>
+                        <android.widget.Button
+                            android:id="@+id/btn_go_without"
+                            android:layout_width="wrap_content"
+                            android:layout_gravity="center"
+                            android:paddingStart="43dp"
+                            android:paddingEnd="43dp"
+                            android:layout_marginBottom="16dp"
+                            android:layout_marginTop="20dp"
+                            android:text="مواصلة بدون تسجيل"
+                            android:background="@drawable/btn_back_black"
+                            android:textColor="@color/white"
+
+                            android:layout_height="match_parent">
+
+                        </android.widget.Button>
+
+                    </LinearLayout>
+
+
+
+
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

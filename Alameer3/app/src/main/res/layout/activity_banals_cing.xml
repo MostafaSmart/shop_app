@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="rtl"
+    tools:context=".activitys.activty.BanalsCingActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:id="@+id/heder_ban"
+            android:layout_height="wrap_content">
+
+            <include layout="@layout/simple_heder"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:id="@+id/chick_panal_prodact"
+                    android:text=" ربط مع منتج"
+                    android:layout_height="wrap_content">
+
+                </CheckBox>
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:id="@+id/chick_pan_only"
+                    android:text="بدون منتج"
+                    android:layout_height="wrap_content">
+
+                </CheckBox>
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:id="@+id/chick_delete_pan"
+                    android:text="حذف اعلان"
+                    android:layout_height="wrap_content">
+
+                </CheckBox>
+            </LinearLayout>
+
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="wrap_content"
+                android:id="@+id/btn_delete_list_banal"
+                android:layout_margin="16dp"
+                android:visibility="gone"
+                android:layout_gravity="center"
+                android:background="@drawable/btn_blue_background"
+                android:textColor="@color/white"
+                android:text="عرض الاعلانات"
+                android:layout_height="wrap_content">
+
+            </androidx.appcompat.widget.AppCompatButton>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:visibility="gone"
+                android:id="@+id/vis_mult_panal"
+                android:layout_height="wrap_content">
+
+                <android.widget.Button
+                    android:id="@+id/add_photo_banal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="16dp"
+                    android:background="@color/blue_lite"
+                    android:text="اضافة صورة"
+                    android:textColor="@color/white">
+
+                </android.widget.Button>
+                <android.widget.Button
+                    android:id="@+id/btn_edit_panal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="16dp"
+                    android:background="@color/blue_lite"
+                    android:text="تعديل الصور"
+                    android:textColor="@color/white">
+
+                </android.widget.Button>
+
+                <TextView
+                    android:id="@+id/banal_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="16dp"
+                    android:text="0">
+
+                </TextView>
+
+                <android.widget.Button
+                    android:id="@+id/post_photo_banal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="24dp"
+                    android:background="@color/blue_lite"
+
+                    android:text="نشر "
+                    android:textColor="@color/white">
+
+                </android.widget.Button>
+            </LinearLayout>
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_marginBottom="16dp"
+                android:visibility="gone"
+                android:background="@drawable/dialog_background"
+                android:id="@+id/connect_banal_prodact"
+                android:layout_height="wrap_content">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_margin="16dp"
+
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="الصور"
+
+                        android:layout_height="wrap_content"/>
+
+
+
+                    <Spinner
+                        android:id="@+id/banal_imag"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:visibility="gone"
+
+                        android:layout_marginEnd="30dp"
+
+
+                        android:background="@drawable/serch_backgrounf"
+                        android:paddingTop="16dp"
+                        android:paddingBottom="16dp">
+
+                    </Spinner>
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:layout_width="wrap_content"
+                        android:text="اضافة صورة"
+                        android:textColor="@color/white"
+                        android:background="@drawable/btn_blue_background"
+                        android:id="@+id/btn_add_one_img"
+                        android:layout_height="wrap_content">
+
+                    </androidx.appcompat.widget.AppCompatButton>
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="200dp"
+                    android:visibility="gone"
+                    android:scaleType="centerCrop"
+                    android:layout_gravity="center"
+                    android:id="@+id/img_show"
+                    android:layout_height="150dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+
+                    android:layout_margin="16dp"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="اختر منتج لربطة مع الاعلان "
+
+                        android:layout_height="wrap_content"/>
+
+
+
+                    <Spinner
+                        android:id="@+id/banal_prod"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:padding="24dp"
+
+                        android:layout_marginEnd="30dp"
+
+
+                        android:background="@drawable/serch_backgrounf"
+                        android:paddingTop="16dp"
+                        android:paddingBottom="16dp">
+
+                    </Spinner>
+
+                </LinearLayout>
+
+                <android.widget.Button
+                    android:layout_width="wrap_content"
+                    android:text="ربط ونشر الاعلان"
+                    android:background="@drawable/btn_blue_background"
+                    android:textColor="@color/white"
+                    android:layout_gravity="center"
+                    android:id="@+id/btn_conect_b_p"
+                    android:layout_height="wrap_content">
+
+                </android.widget.Button>
+            </LinearLayout>
+
+
+
+
+            <ProgressBar
+                android:id="@+id/prog_post_banals"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="gone">
+
+            </ProgressBar>
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

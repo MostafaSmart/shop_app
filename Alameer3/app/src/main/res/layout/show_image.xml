@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:padding="@dimen/spacing_standard"
+        android:id="@+id/tol_bar_image"
+        android:layoutDirection="rtl"
+        style="@style/TapStayle"
+        android:layout_height="?attr/actionBarSize">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:layout_weight="0.5"
+
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            >
+            <ImageView
+                android:layout_width="@dimen/_30sdp"
+                android:id="@+id/bakc_Image"
+                android:src="@drawable/black_back_icon"
+
+                android:layout_height="@dimen/_30sdp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+
+      android:layout_centerInParent="true"
+
+
+
+        android:id="@+id/imgViewShowALl"
+        android:layout_height="wrap_content"/>
+
+
+
+</RelativeLayout>

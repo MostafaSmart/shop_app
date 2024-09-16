@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="rtl"
+    style="@style/backGround2"
+
+    tools:context=".activitys.activty.MoreActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        style="@style/backGround2"
+
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.facebook.shimmer.ShimmerFrameLayout
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            app:shimmer_auto_start="true"
+
+            app:shimmer_clip_to_children="true"
+            android:id="@+id/shim_more"
+
+            android:layout_height="0dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_marginStart="16dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:paddingStart="16dp"
+                    android:orientation="vertical"
+
+                    android:layout_height="match_parent">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="150dp"
+                        app:cardBackgroundColor="#dddddd"
+                        app:cardCornerRadius="10dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_height="220dp">
+
+
+                    </androidx.cardview.widget.CardView>
+
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="150dp"
+                        app:cardBackgroundColor="#dddddd"
+                        app:cardCornerRadius="10dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_height="220dp">
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="150dp"
+                        app:cardBackgroundColor="#dddddd"
+                        app:cardCornerRadius="10dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_height="220dp">
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginStart="8dp"
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="150dp"
+                        app:cardBackgroundColor="#dddddd"
+                        app:cardCornerRadius="10dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_height="220dp">
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="150dp"
+                        app:cardBackgroundColor="#dddddd"
+                        app:cardCornerRadius="10dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_height="220dp">
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="150dp"
+                        app:cardBackgroundColor="#dddddd"
+                        app:cardCornerRadius="10dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_height="220dp">
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </com.facebook.shimmer.ShimmerFrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:id="@+id/show_contener"
+
+            android:visibility="gone"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:id="@+id/more_heder"
+                android:layout_height="wrap_content">
+
+                <include layout="@layout/simple_heder"/>
+            </LinearLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_gravity="start"
+                android:layout_height="wrap_content"
+
+
+
+                android:layout_marginStart="8dp"
+                android:id="@+id/liner_filter"
+                android:visibility="gone"
+
+               style="@style/MyTextInputSelectd"
+
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="40dp"
+
+                app:endIconTintMode="screen"
+                android:background="@color/liteBlack"
+                >
+
+                <com.google.android.material.textfield.MaterialAutoCompleteTextView
+                    android:id="@+id/descount_section_felter"
+                    android:layout_width="match_parent"
+
+
+                    style="@style/textColor1Wite_black"
+                    android:layout_height="wrap_content"
+
+                    android:inputType="text"
+
+
+
+                    tools:ignore="TouchTargetSizeCheck" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+            <GridView
+                android:layout_marginTop="8dp"
+
+                android:layout_width="match_parent"
+                android:numColumns="auto_fit"
+
+                style="@style/backGround2"
+                android:id="@+id/more_grid"
+                android:gravity="center"
+
+                android:layout_weight="1"
+                android:layout_height="0dp" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

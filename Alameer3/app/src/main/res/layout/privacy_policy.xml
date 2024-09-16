@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layoutDirection="rtl"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:id="@+id/contenr_privsy"
+        android:layout_width="match_parent"
+
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/backgroun1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:src="@drawable/logo">
+
+            </ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@color/black"
+                android:layout_marginTop="16dp"
+                android:text="سياسة الخصوصية"
+                android:textSize="20sp">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text="سياسة الخصوصية هي أهم ما لدينا في متجر الامير ونؤمن بخصوصية وسرية معلومات العميل، توضح هذه السياسة الطرق التى نقوم فيها بجمع واستخدام المعلومات والبيانات، كما تذكر أيضا الإجراءات المتبعة لضمان خصوصية معلوماتك. وتتعلق هذه السياسة بإستخدامك لهذا التطبيق ."
+                android:textSize="17sp"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:textSize="17sp"
+                android:textColor="@color/black"
+                android:layout_marginTop="16dp"
+                android:text="اولاً : المعلومات الشخصية التي يحصل عليها تطبيقنا"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:textSize="17sp"
+                android:text="المعلومات الشخصية الخاصة بالمستخدم , كالاسم والبريد الالكتروني ورقم الهاتف. \n عند طلبك لمنتجات من تطبيق الامير ستور قد نحتاج الى مشاركة بعض بياناتك مع شركة التوصيل, بغية تسليمك طلبية شرائك\nقد يتم التواصل معك على رقم الهاتف لاعلامك عن اي تحديث في حالة طلبيتك.\n
+نستخدم المعلومات التي تقدمها في مساعدتك لادارة حسابك بما في ذلك ارجاع او استبدال المنتجات والتأكد من قيامك بالمعاملات المالية اللازمة التي تجريها على الانترنت \n
+نستخدم هذه المعلومات في عمليات تدقيق عدد مستخدمين التطبيق واحصائيات مبيعات المتجر"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:textSize="17sp"
+                android:textColor="@color/black"
+                android:text="ثانياً : نحرص على ابلاغك بكل هذه التفاصيل لتكون على علم تام بها ونضمن موافقتك عليها"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:textColor="@color/black"
+                android:layout_margin="16dp"
+                android:text="ثالثاً : هل الامير ستور يشارك هذه المعلومات ؟"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:textSize="17sp"
+                android:text="يسعى الامير ستور بالاحتفاظ بهذه المعلومات بما يحفظ خصوصية المستخدم , ويتم هذا بهدف تحسين جودة المتجر الالكتروني وتسهيل التعامل بين المستخدم والمتجر
+\nيتبع الامير ستور القاعدة العامة في عدم اطلاع هذه المعلومات الا القائمين على المتجر ولن يقوم بتاتاً بنشرها او بثها للغير , حيث ان المتجر يسعى للحفاظ على سلامة بيانات المستخدمين "
+                android:textStyle="bold">
+
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:textColor="@color/black"
+                android:layout_margin="16dp"
+                android:text="رابعا :  هل هناك طرف ثالث في العلاقة بين متجر مختلف والتاجر"
+                android:textStyle="bold">
+
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:textSize="17sp"
+                android:text="تحدد هنا سياسية الخصوصية فيما يتعلق بالاحالات التي يكون هناك طرف ثالث, كشركات التوصيل والمسئولين عن المتجر "
+                android:textStyle="bold">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:textColor="@color/black"
+                android:layout_margin="16dp"
+                android:text=" قد تخضع ساسية الخصوصية هذه للتغيير من وقت لاخر . لذلك يمكنك التحقق بشكل منتظم من ذلك
+\nتم  نشر النسخة الحالية من سياسة الخصوصية هذه على الانترنت\n"
+                android:textStyle="bold">
+
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:textColor="@color/black"
+                android:layout_margin="16dp"
+                android:text="اعلان موافقة المستخدم :\n
+اوافق طوعا بشكل صريح على جمع بياناتي ومشاكرتها واستخدامها في الاجراءات والاحتفاظ بها وفقا للطريقة المنصوص عليها كما ورد اعلاه ."
+                android:textStyle="bold">
+
+            </TextView>
+
+        </LinearLayout>
+
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="rtl"
+    android:paddingStart="16dp"
+
+    android:orientation="vertical"
+    android:paddingEnd="16dp"
+    android:paddingBottom="24dp"
+    android:background="@drawable/dialog_background2">
+    <ScrollView
+        android:layout_width="match_parent"
+
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_remove_round"
+                android:layout_gravity="center|top"
+                android:scaleType="centerCrop"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/show_name_pr"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                android:layout_marginTop="16dp"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/show_about_prod"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:layout_marginTop="8dp"
+                android:layout_height="wrap_content">
+
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="المقاسات والاسعار"
+                android:layout_marginTop="16dp"
+                android:layout_height="wrap_content">
+
+            </TextView>
+            <EditText
+                android:layout_width="match_parent"
+
+                android:id="@+id/summary_size"
+                android:enabled="false"
+                android:layout_height="wrap_content">
+
+            </EditText>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="التخفيضات"
+                android:layout_marginTop="16dp"
+                android:layout_height="wrap_content">
+
+            </TextView>
+            <EditText
+                android:layout_width="match_parent"
+                android:enabled="false"
+
+                android:id="@+id/summary_descount"
+                android:layout_height="wrap_content">
+
+            </EditText>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="الكميات"
+                android:layout_marginTop="16dp"
+                android:layout_height="wrap_content">
+
+            </TextView>
+            <EditText
+                android:layout_width="match_parent"
+
+                android:id="@+id/summary_count"
+                android:enabled="false"
+                android:layout_height="wrap_content">
+
+            </EditText>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="الالوان"
+                android:layout_marginTop="16dp"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:id="@+id/summary_colors"
+                android:enabled="false"
+
+                android:layout_height="wrap_content">
+
+            </EditText>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

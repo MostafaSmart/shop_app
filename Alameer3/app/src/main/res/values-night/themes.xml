@@ -1,0 +1,162 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Alameer3" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="android:screenOrientation">portrait</item>
+        <!-- Primary brand color. -->
+
+        <item name="colorPrimary">@color/blue_lite_300</item>
+        <item name="colorPrimaryVariant">@color/blue_lite_300</item>
+        <item name="colorOnPrimary">@color/black</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_200</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+
+
+<!--        buttomBar -->
+
+
+
+        <item name="android:statusBarColor">@color/black</item>
+        <!-- Customize your theme here. -->
+        <item name="android:fontFamily">@font/cairo</item>
+    </style>
+    <style name="MyBottomAppBar" parent="Widget.MaterialComponents.BottomAppBar">
+        <item name="backgroundTint">@color/liteBlack2</item>
+        <item name="tint">@color/blue_lite</item>
+    </style>
+
+
+
+
+    <style name="MyFloatingActionButton" parent="Widget.Design.FloatingActionButton">
+        <item name="backgroundTint">@color/liteBlack</item>
+        <item name="tint">@color/blue_lite</item>
+
+    </style>
+
+
+    <style name="MyTextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="android:textColorHint">@color/witheHint</item>
+        <item name="boxStrokeColor">@color/witheHint</item>
+        <item name="android:padding">8dp</item>
+        <item name="counterOverflowTextColor">@color/witheHint</item>
+        <item name="helperTextTextColor">@color/witheHint</item>
+        <item name="placeholderTextColor">@color/witheHint</item>
+        <item name="boxStrokeWidth">2dp</item>
+
+        <item name="boxCornerRadiusTopStart">10dp</item>
+
+        <item name="boxCornerRadiusTopEnd">10dp</item>
+        <item name="boxCornerRadiusBottomStart">10dp</item>
+        <item name="boxCornerRadiusBottomEnd">10dp</item>
+
+
+        <item name="android:textColor">@color/white</item>
+        <item name="boxBackgroundColor">#2AFFFFFF</item>
+        <item name="boxStrokeWidthFocused">3dp</item>
+    </style>
+
+    <style name="textColor1Wite_black" parent="Widget.AppCompat.TextView">
+        <item name="android:textColor">@color/witheHint</item>
+    </style>
+    <style name="textColor2Wite_black" parent="Widget.AppCompat.TextView">
+        <item name="android:textColor">@color/white</item>
+        <item name="hintTextColor">@color/witheHint</item>
+    </style>
+
+    <style name="backGround2">
+        <item name="android:background">#1C1C1C</item>
+    </style>
+    <style name="backGround1">
+        <item name="android:background">@color/liteBlack</item>
+    </style>
+
+    <style name="DialogBackground">
+
+        <item name="android:background">@drawable/dialog_background2_night</item>
+
+    </style>
+
+    <style name="MyTabLayout" parent="Widget.Design.TabLayout">
+        <item name="tabTextColor">@color/witheHint</item>
+        <item name="tabIndicatorColor">@color/blue_lite</item>
+        <item name="tabSelectedTextColor">@color/blue_lite_300</item>
+        <item name="background">@color/black</item>
+    </style>
+
+    <style name="MyTextInputSelectd" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+        <item name="android:textColorHint">@color/witheHint</item>
+        <item name="boxStrokeColor">@color/witheHint</item>
+        <item name="boxStrokeWidth">1dp</item>
+        <item name="boxBackgroundColor">#2AFFFFFF</item>
+        <item name="boxStrokeWidthFocused">3dp</item>
+        <item name="endIconTintMode">screen</item>
+
+    </style>
+
+
+
+    <style name="MySpinner" parent="Widget.AppCompat.Spinner.Underlined">
+
+        <item name="android:popupBackground">#E1323131</item>
+
+        <item name="android:backgroundTint">@color/white</item>
+        <item name="android:hapticFeedbackEnabled">true</item>
+    </style>
+
+
+
+
+    <style name="MyCard" parent="CardView.Dark">
+
+    </style>
+
+
+
+    <style name="TextStyle" parent="@android:style/TextAppearance">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">#aacbb4</item>
+    </style>
+
+
+    <style name="CostmTabLayout" parent="Widget.Design.TabLayout">
+        <item name="enforceMaterialTheme">true</item>
+        <item name="enforceTextAppearance">true</item>
+        <item name="android:background">?attr/colorSurface</item>
+        <item name="tabIconTint">@color/mtrl_tabs_icon_color_selector</item>
+        <item name="tabIndicatorAnimationDuration">100</item>
+        <item name="tabIndicatorColor">@color/teal_200</item>
+        <item name="tabTextAppearance">?attr/textAppearanceButton</item>
+        <item name="tabTextColor">@color/mtrl_tabs_icon_color_selector</item>
+        <item name="tabRippleColor">@color/mtrl_tabs_ripple_color</item>
+        <item name="tabUnboundedRipple">true</item>
+
+
+
+    </style>
+
+    <style name="DialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/slide_in_bottom</item>
+        <item name="android:windowExitAnimation">@anim/slide_out_bottom</item>
+    </style>
+
+    <style name="Theme.App.Starting" parent="Theme.SplashScreen">
+
+        <item name="windowSplashScreenBackground">@color/black</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/logo</item>
+
+        <item name="postSplashScreenTheme">@style/Theme.Alameer3</item>
+
+
+    </style>
+
+
+    <style name="TapStayle">
+        <item name="android:background">@drawable/tap_night</item>
+    </style>
+
+
+</resources>

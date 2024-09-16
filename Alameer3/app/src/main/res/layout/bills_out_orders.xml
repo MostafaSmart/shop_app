@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="rtl"
+    android:paddingStart="16dp"
+    android:paddingEnd="16dp"
+    style="@style/DialogBackground"
+    android:paddingBottom="24dp"
+    >
+
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_gravity="center"
+            android:src="@drawable/logo"
+            android:layout_height="50dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:textColor="@color/red"
+            android:layout_gravity="center"
+            android:layout_marginTop="4dp"
+            android:text="يمكنك مراجعة الطلب في ملفك الشخصي"
+            android:layout_height="wrap_content"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_marginTop="16dp"
+
+        style="@style/MyCard"
+        app:cardCornerRadius="10dp"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+
+            android:paddingTop="8dp"
+
+            android:paddingBottom="16dp"
+
+            android:visibility="gone"
+
+
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                android:paddingStart="16dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="الاسم"
+                    style="@style/textColor2Wite_black"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="قيمة المشتريات"
+                    android:layout_marginTop="16dp"
+                    style="@style/textColor2Wite_black"
+
+                    android:layout_height="wrap_content">
+
+                </TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="العنوان"
+                    style="@style/textColor2Wite_black"
+
+                    android:layout_marginTop="16dp"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="تكلفة التوصيل"
+                    style="@style/textColor2Wite_black"
+
+                    android:layout_marginTop="16dp"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="رقم الهاتف"
+                    style="@style/textColor2Wite_black"
+
+                    android:layout_marginTop="16dp"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+
+                android:layout_weight="1"
+                android:paddingStart="24dp"
+                android:paddingEnd="16dp"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="عنوان 1"
+
+                    android:id="@+id/show_name_finsh"
+                    style="@style/textColor2Wite_black"
+
+                    android:layout_height="wrap_content">
+
+                </TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="عنوان 1"
+                    android:layout_marginTop="16dp"
+
+                    android:id="@+id/totalprice_finsh"
+                    style="@style/textColor2Wite_black"
+
+                    android:layout_height="wrap_content">
+
+                </TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="عنوان 1"
+                    android:layout_marginTop="16dp"
+
+                    android:id="@+id/show_adres_finsh"
+                    style="@style/textColor2Wite_black"
+
+                    android:layout_height="wrap_content">
+
+                </TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="عنوان 1"
+                    android:layout_marginTop="16dp"
+                    style="@style/textColor2Wite_black"
+                    android:id="@+id/show_price_tosel"
+
+                    android:layout_height="wrap_content">
+
+                </TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="عنوان 1"
+                    android:layout_marginTop="16dp"
+
+                    android:id="@+id/show_phone_tosel"
+                    style="@style/textColor2Wite_black"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:layout_width="wrap_content"
+
+        android:layout_margin="16dp"
+        style="@style/textColor2Wite_black"
+        android:text="شكرًا لك على طلبك من متجرنا \n ."
+        android:layout_height="wrap_content">
+
+    </TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="يرجى القيام بدفع قيمة المشتريات عبر التحويل إلى حسابنا كريمي الموضح أدناه"
+        android:id="@+id/text_korimi_masseg"
+        style="@style/textColor2Wite_black"
+        android:visibility="gone"
+        android:layout_height="wrap_content">
+
+    </TextView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        app:cardCornerRadius="10dp"
+        android:id="@+id/card_korimi_acounts"
+        style="@style/MyCard"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:id="@+id/show_acount_inform2"
+            android:orientation="vertical"
+            android:paddingTop="8dp"
+           android:visibility="gone"
+            android:paddingStart="16dp"
+            android:paddingBottom="16dp"
+            android:layout_height="wrap_content">
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+
+                    style="@style/textColor2Wite_black"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="الاسم"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+
+                <TextView
+
+
+                    android:text="صلاح عبدالجليل حمود العواضي"
+                    android:layout_width="0dp"
+                    style="@style/textColor2Wite_black"
+                    android:layout_weight="2"
+                    android:gravity="right"
+                    android:layout_marginStart="50dp"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="16dp"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+
+                    style="@style/textColor2Wite_black"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text=" حساب الكريمي يمني"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+
+                <TextView
+
+                    style="@style/textColor2Wite_black"
+                    android:text="3060395852"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:gravity="right"
+
+
+                    android:layout_height="wrap_content">
+
+                </TextView>
+
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_marginTop="16dp"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+
+                    style="@style/textColor2Wite_black"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text=" حساب الكريمي سعودي"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+
+                <TextView
+
+                    style="@style/textColor2Wite_black"
+                    android:text="3062835914"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:gravity="right"
+
+                    android:layout_height="wrap_content">
+
+                </TextView>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="16dp"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+
+                    style="@style/textColor2Wite_black"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text=" حساب الكريمي دولار"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+
+                <TextView
+
+                    style="@style/textColor2Wite_black"
+                    android:text="3060922453"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="16dp"
+                android:layout_width="match_parent"
+                android:id="@+id/card_hasib"
+           android:visibility="gone"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+
+                    style="@style/textColor2Wite_black"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="نقطة حاسب"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+
+                <TextView
+
+                    style="@style/textColor2Wite_black"
+                    android:id="@+id/text_hasib"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:gravity="right"
+
+
+                    android:layout_height="wrap_content">
+
+                </TextView>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+<LinearLayout
+    android:id="@+id/corimi_info"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_height="wrap_content">
+
+
+
+    <TextView
+        android:layout_marginTop="16dp"
+
+        style="@style/textColor2Wite_black"
+        android:layout_width="wrap_content"
+        android:text="انتقل الى قائمة طلباتك لمشاهدة التفاصيل واحراج فاتورة رقمية."
+        android:layout_height="wrap_content">
+
+    </TextView>
+    <TextView
+        android:layout_marginTop="16dp"
+
+        style="@style/textColor2Wite_black"
+        android:layout_width="wrap_content"
+        android:text="شكرًا مرة أخرى وتمنياتنا بتجربة تسوق ممتعة."
+        android:layout_height="wrap_content">
+
+    </TextView>
+</LinearLayout>
+        <android.widget.Button
+            android:layout_width="wrap_content"
+            android:text="انهاء "
+            android:textColor="@color/white"
+            android:id="@+id/btn_finsh_confirm"
+            android:layout_marginEnd="16dp"
+
+            android:background="@drawable/btn_back_black"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content">
+
+        </android.widget.Button>
+
+
+
+
+</LinearLayout>

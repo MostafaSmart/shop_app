@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:padding="@dimen/spacing_standard"
+    android:layoutDirection="rtl"
+    style="@style/TapStayle"
+    android:layout_height="?attr/actionBarSize">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        android:layout_weight="0.5"
+
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        >
+        <ImageView
+            android:layout_width="@dimen/_30sdp"
+            android:id="@+id/bakc_show"
+            android:src="@drawable/black_back_icon"
+
+            android:layout_height="@dimen/_30sdp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+          android:id="@+id/stringa"
+        android:layout_weight="2"
+
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/toolbar_tital"
+
+            style="@style/textColor2Wite_black"
+
+            android:textSize="@dimen/font_size_medium"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content">
+
+        </TextView>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="2"
+
+
+        android:layout_gravity="center"
+        android:gravity="end"
+        android:id="@+id/shareL"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="@dimen/_20sdp"
+            android:id="@+id/share_prodact"
+            android:layout_marginEnd="@dimen/spacing_standard"
+            android:src="@drawable/icon_share_50"
+            android:layout_gravity="center"
+            android:layout_height="@dimen/_20sdp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_marginEnd="@dimen/spacing_standard"
+            android:layout_gravity="center"
+            android:id="@+id/salah_short_show"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+
+                android:src="@drawable/ic_baseline_add_shopping_cart_24"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/sala_count_show"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/raound_red_background"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:layout_marginTop="-10dp"
+                android:gravity="center"
+
+
+
+                android:text="0"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="@dimen/_20sdp"
+            android:id="@+id/hart_icon_show"
+            android:layout_marginEnd="@dimen/spacing_standard"
+            android:src="@drawable/hart_of"
+            android:layout_gravity="center"
+            android:layout_height="@dimen/_20sdp"/>
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

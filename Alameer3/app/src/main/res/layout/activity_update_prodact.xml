@@ -1,0 +1,1190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="rtl"
+    tools:context=".activitys.activty.UpdateProdactActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:id="@+id/heder_conter"
+            android:layout_height="wrap_content">
+
+            <include layout="@layout/simple_heder"/>
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+
+
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:text="تعديل الاسم و الوصف"
+                        android:id="@+id/chick_update_name"
+
+                        android:layout_height="wrap_content"/>
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:text="تحديث الكميات"
+                        android:id="@+id/update_count"
+
+                        android:layout_height="wrap_content">
+
+                    </CheckBox>
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:text="تحديث الاسعار"
+                        android:id="@+id/update_price"
+
+                        android:layout_height="wrap_content">
+
+                    </CheckBox>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:text="اضافة تخفيض"
+                        android:id="@+id/update_descount"
+
+                        android:layout_height="wrap_content">
+
+                    </CheckBox>
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:text="اضافة مقاسات"
+                        android:layout_marginStart="8dp"
+                        android:id="@+id/update_add_sizes"
+
+                        android:layout_height="wrap_content">
+
+
+
+                    </CheckBox>
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:text="تعديل الالوان"
+                        android:layout_marginStart="8dp"
+                        android:id="@+id/chick_update_colors"
+
+                        android:layout_height="wrap_content">
+
+                    </CheckBox>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:text="ادارة الصور"
+                        android:id="@+id/update_imaga"
+                        android:layout_marginStart="16dp"
+                        android:layout_height="wrap_content">
+
+                    </CheckBox>
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:text="ربط صورة و مقاس"
+                        android:id="@+id/chick_img_size"
+                        android:layout_height="wrap_content">
+
+                    </CheckBox>
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:text="ربط صورة و لون"
+                        android:id="@+id/chick_img_color"
+                        android:layout_height="wrap_content">
+
+                    </CheckBox>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:text="تغير القسم"
+                        android:id="@+id/chick_new_section"
+                        android:layout_marginStart="16dp"
+                        android:layout_height="wrap_content">
+
+                    </CheckBox>
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:text="تعديل مقاسات"
+                        android:layout_marginStart="10dp"
+                        android:id="@+id/chbox_update_sizes"
+
+                        android:layout_height="wrap_content"/>
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:text="حذف مقاس"
+                        android:layout_marginStart="10dp"
+                        android:id="@+id/chbox_delete_sizes"
+
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/update_name_desc_parent"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/update_prod_name"
+                        android:layout_width="match_parent"
+                        android:layout_margin="16dp"
+                        android:hint="اسم المنتج"
+                        android:layout_height="wrap_content"/>
+
+
+                    <EditText
+                        android:id="@+id/update_prod_descrp"
+                        android:layout_width="match_parent"
+                        android:layout_margin="16dp"
+                        android:hint="وصف المنتج"
+                        android:layout_height="wrap_content"/>
+
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:layout_width="wrap_content"
+                        android:paddingStart="20dp"
+                        android:paddingEnd="20dp"
+                        android:text="حفظ التعديل"
+                        android:id="@+id/btn_updateSave_name"
+                        android:textColor="@color/white"
+                        android:layout_gravity="center"
+                        android:background="@drawable/btn_blue_background"
+                        android:layout_height="wrap_content">
+
+                    </androidx.appcompat.widget.AppCompatButton>
+                </LinearLayout>
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+
+                    android:layout_margin="16dp"
+                    android:visibility="gone"
+
+                    android:id="@+id/updata_add_img_size"
+
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="ربط صورة ومقاس"
+                            android:layout_height="wrap_content">
+
+                        </TextView>
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:layout_width="wrap_content"
+                            android:id="@+id/btn_img_size"
+                            android:background="@drawable/btn_blue_background"
+                            android:textColor="@color/white"
+                            android:layout_gravity="center"
+                            android:layout_margin="16dp"
+                            android:text="عرض الصور"
+                            android:layout_height="wrap_content">
+
+                        </androidx.appcompat.widget.AppCompatButton>
+
+
+
+                    </LinearLayout>
+
+
+
+
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:visibility="gone"
+                    android:layout_margin="16dp"
+
+
+                    android:id="@+id/updata_add_img_color"
+
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="ربط صورة ولون"
+                            android:layout_height="wrap_content">
+
+                        </TextView>
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:layout_width="wrap_content"
+                            android:id="@+id/btn_img_color"
+                            android:background="@drawable/btn_blue_background"
+                            android:textColor="@color/white"
+                            android:layout_gravity="center"
+                            android:layout_margin="16dp"
+                            android:text="عرض الصور"
+                            android:layout_height="wrap_content">
+
+                        </androidx.appcompat.widget.AppCompatButton>
+
+
+
+                    </LinearLayout>
+
+
+
+
+                </androidx.cardview.widget.CardView>
+
+
+
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="16dp"
+                    android:visibility="gone"
+                    android:layout_marginBottom="16dp"
+
+                    android:id="@+id/updata_add_size"
+
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="المقاسات والاسعار"
+                            android:layout_height="wrap_content">
+
+                        </TextView>
+
+
+                        <CheckBox
+                            android:layout_marginTop="10dp"
+                            android:layout_width="wrap_content"
+                            android:visibility="gone"
+                            android:id="@+id/chick_new_one_price"
+                            android:text="سعر واحد لكل المقاسات"
+                            android:layout_height="wrap_content"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="horizontal"
+                            android:layout_height="wrap_content">
+
+
+
+
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+                                android:hint="المقاسات"
+                                app:boxBackgroundColor="@color/white"
+
+                                android:layout_marginStart="16dp"
+                                android:layout_marginEnd="16dp"
+                                >
+
+                                <AutoCompleteTextView
+                                    android:id="@+id/input_new_size_prodact"
+                                    android:layout_width="match_parent"
+
+                                    android:layout_height="wrap_content"
+
+                                    />
+                            </com.google.android.material.textfield.TextInputLayout>
+
+
+                        </LinearLayout>
+
+
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="horizontal"
+                            android:layout_height="wrap_content">
+
+
+
+                            <EditText
+                                android:id="@+id/add_new_prod_price_input"
+                                android:layout_weight="1"
+                                android:hint="سعر المقاس بالسعودي"
+                                android:layout_width="0dp"
+                                android:inputType="numberDecimal"
+                                android:layout_marginTop="16dp"
+                                android:layout_marginStart="16dp"
+                                android:layout_marginEnd="16dp"
+                                android:layout_height="wrap_content">
+
+                            </EditText>
+
+
+                        </LinearLayout>
+                        <CheckBox
+                            android:layout_marginTop="10dp"
+                            android:layout_width="wrap_content"
+                            android:layout_margin="8dp"
+
+                            android:id="@+id/chick_price_down_new"
+                            android:text="سعر خاص بالجنوب"
+                            android:layout_height="wrap_content"/>
+                        <EditText
+                            android:id="@+id/add_prod_new_spti_price"
+
+                            android:hint="سعر خاص بالجنوب اذا وجد"
+                            android:layout_width="match_parent"
+                            android:inputType="numberDecimal"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginEnd="16dp"
+                            android:layout_height="wrap_content"/>
+                        <android.widget.Button
+                            android:id="@+id/btn_add_price_new"
+                            android:layout_width="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginEnd="16dp"
+                            android:text="اضافة المقاس"
+                            android:background="@color/blue_lite"
+                            android:textColor="@color/white"
+                            android:layout_margin="8dp"
+                            android:layout_height="wrap_content">
+
+                        </android.widget.Button>
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginBottom="16dp"
+                            android:id="@+id/summary_size_new"
+                            android:enabled="false"
+                            android:layout_height="wrap_content">
+
+                        </EditText>
+
+                    </LinearLayout>
+
+
+
+
+                </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:padding="16dp"
+                android:visibility="gone"
+
+                android:layout_margin="16dp"
+                android:id="@+id/updata_color_card"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="تعديل  الالوان"
+                        android:layout_height="wrap_content"/>
+
+                    <CheckBox
+                        android:layout_marginTop="10dp"
+                        android:layout_width="wrap_content"
+                        android:id="@+id/chick_one_color_update"
+                        android:text="نفس اللالوان لجميع المقاسات"
+                        android:layout_height="wrap_content"/>
+
+                    <Spinner
+                        android:id="@+id/chose_size_newColor"
+                        style="@style/Widget.AppCompat.Spinner"
+                        android:layout_width="300dp"
+                        android:layout_height="?attr/dropdownListPreferredItemHeight"
+                        android:layout_margin="10dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:background="@drawable/spinner_bg"
+                        android:dropDownWidth="300dp"
+                        android:dropDownVerticalOffset="?attr/dropdownListPreferredItemHeight"
+                        android:paddingRight="14dp"
+                        android:popupBackground="@android:color/white"
+                        android:popupElevation="3dp"
+                        android:stateListAnimator="@drawable/spinner_sla"
+                        android:layoutDirection="rtl"
+
+                        tools:listitem="@layout/spiner_layoyt" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:id="@+id/input_update_color"
+                        android:hint="الالوان"
+                        android:layout_height="wrap_content">
+
+                    </EditText>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="wrap_content"
+                    android:background="@drawable/btn_blue_background"
+                    android:layout_gravity="center"
+                    android:id="@+id/btn_update_color"
+                    android:text="حفظ"
+                    android:textColor="@color/white"
+                    android:layout_margin="8dp"
+                    android:layout_height="wrap_content">
+
+                </androidx.appcompat.widget.AppCompatButton>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:id="@+id/summary_update_colors"
+                        android:enabled="false"
+                        android:layout_height="wrap_content">
+
+                    </EditText>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="400dp"
+                    android:padding="16dp"
+                    android:layout_margin="16dp"
+                    android:visibility="gone"
+                    android:id="@+id/updata_image_card"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="تعديل صور"
+                            android:layout_height="wrap_content">
+
+                        </TextView>
+
+
+
+
+                        <LinearLayout
+                            android:layout_marginTop="16dp"
+                            android:layout_width="match_parent"
+                            android:orientation="horizontal"
+                            android:layout_height="wrap_content">
+
+                            <Spinner
+                                android:id="@+id/chos_update_image"
+                                android:layout_marginStart="40dp"
+                                android:paddingTop="20dp"
+
+
+                                android:layoutDirection="rtl"
+                                android:layout_marginTop="8dp"
+                                android:paddingBottom="20dp"
+
+
+                                android:layout_marginEnd="16dp"
+
+                                android:layout_width="200dp"
+                                android:layout_height="wrap_content" />
+
+
+
+                            <android.widget.Button
+                                android:id="@+id/btn_add_new_img"
+                                android:layout_width="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginEnd="16dp"
+                                android:text=" اضافة صور "
+                                android:background="@color/blue_lite"
+                                android:textColor="@color/white"
+                                android:layout_height="wrap_content">
+
+                            </android.widget.Button>
+
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="horizontal"
+                            android:paddingBottom="8dp"
+                            android:layout_height="wrap_content">
+                            <android.widget.Button
+                                android:id="@+id/btn_show_new_img"
+                                android:layout_width="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="8dp"
+                                android:layout_marginStart="4dp"
+
+                                android:layout_marginEnd="16dp"
+                                android:text="قص الصور الجديدة"
+                                android:background="@color/blue_lite"
+                                android:textColor="@color/white"
+                                android:layout_height="wrap_content">
+
+                            </android.widget.Button>
+                            <android.widget.Button
+                                android:id="@+id/btn_reorder_img"
+                                android:layout_width="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginEnd="16dp"
+                                android:layout_marginStart="4dp"
+                                android:text=" ترتيب صور لقديمة"
+                                android:background="@color/blue_lite"
+                                android:textColor="@color/white"
+                                android:layout_height="wrap_content">
+
+                            </android.widget.Button>
+
+                            <android.widget.Button
+                                android:id="@+id/btn_show_img"
+                                android:layout_width="wrap_content"
+                                android:layout_marginStart="4dp"
+
+                                android:layout_gravity="center"
+                                android:layout_marginEnd="16dp"
+                                android:text=" حذف صورة القديمة"
+                                android:background="@color/blue_lite"
+                                android:textColor="@color/white"
+                                android:layout_height="wrap_content">
+
+                            </android.widget.Button>
+
+                        </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:layout_marginTop="16dp"
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_margin="8dp"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="اجمالي عدد الصور : "
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+
+                            android:id="@+id/imge_count_total"
+                            android:textColor="@color/black"
+                            android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+
+
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:padding="16dp"
+                    android:visibility="gone"
+                    android:layout_margin="16dp"
+                    android:id="@+id/updata_size_card"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:text="تعديل المقاس">
+
+                        </TextView>
+
+                        <com.google.android.material.chip.ChipGroup
+                            android:layout_width="match_parent"
+                            app:singleSelection="true"
+                            android:id="@+id/ChipGroupSizeUpdate"
+                            android:layout_height="wrap_content">
+
+                        </com.google.android.material.chip.ChipGroup>
+
+
+
+                        <EditText
+                            android:id="@+id/input_update_size"
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginEnd="16dp"
+                            android:hint="اكتب المقاس الجديد بدل الي اخترته">
+
+                        </EditText>
+
+
+
+
+
+                        <android.widget.Button
+                            android:id="@+id/btn_update_size"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginEnd="16dp"
+                            android:background="@color/blue_lite"
+                            android:text="حفظ "
+                            android:textColor="@color/white">
+
+                        </android.widget.Button>
+
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:padding="16dp"
+                    android:visibility="gone"
+                    android:layout_margin="16dp"
+                    android:id="@+id/delete_size_card"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:text="حذف المقاس">
+
+                        </TextView>
+
+                        <com.google.android.material.chip.ChipGroup
+                            android:layout_width="match_parent"
+                            app:singleSelection="true"
+                            android:id="@+id/ChipGroupSizeDelete"
+                            android:layout_height="wrap_content">
+
+                        </com.google.android.material.chip.ChipGroup>
+
+
+                        <android.widget.Button
+                            android:id="@+id/btn_delete_size"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginEnd="16dp"
+                            android:background="@color/blue_lite"
+                            android:text="حذف "
+                            android:textColor="@color/white">
+
+                        </android.widget.Button>
+
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:padding="16dp"
+                    android:visibility="gone"
+                    android:layout_margin="16dp"
+                    android:id="@+id/updata_price_card"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:text="تعديل الاسعار">
+
+                        </TextView>
+
+                        <Spinner
+                            android:id="@+id/chos_size_update_price"
+                            style="@style/Widget.AppCompat.Spinner"
+                            android:layout_width="300dp"
+                            android:layout_height="?attr/dropdownListPreferredItemHeight"
+                            android:layout_margin="10dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginEnd="8dp"
+                            android:background="@drawable/spinner_bg"
+                            android:dropDownWidth="300dp"
+                            android:dropDownVerticalOffset="?attr/dropdownListPreferredItemHeight"
+                            android:paddingRight="14dp"
+                            android:popupBackground="@android:color/white"
+                            android:popupElevation="3dp"
+                            android:stateListAnimator="@drawable/spinner_sla"
+                            android:layoutDirection="rtl"
+
+                            tools:listitem="@layout/spiner_layoyt"/>
+
+                        <CheckBox
+                            android:id="@+id/one_price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:text="سعر واحد لكل المقاسات">
+
+                        </CheckBox>
+
+                        <EditText
+                            android:id="@+id/input_update_price"
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginEnd="16dp"
+                            android:hint="السعر الجديد">
+
+                        </EditText>
+
+
+                        <CheckBox
+                            android:id="@+id/spo_down"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:text="سعر خاص بالجنوب">
+
+                        </CheckBox>
+
+                        <EditText
+                            android:id="@+id/input_d_price"
+                            android:visibility="gone"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginEnd="16dp"
+                            android:hint="السعر الجديد للجنوب اذا وجد">
+
+                        </EditText>
+
+
+                        <android.widget.Button
+                            android:id="@+id/btn_update_price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginEnd="16dp"
+                            android:background="@color/blue_lite"
+                            android:text="حفظ "
+                            android:textColor="@color/white">
+
+                        </android.widget.Button>
+
+
+                        <EditText
+                            android:id="@+id/summary_new_price"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:enabled="false">
+
+                        </EditText>
+
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:padding="16dp"
+                    android:visibility="gone"
+
+                    android:layout_margin="16dp"
+                    android:id="@+id/updata_count_discount"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_margin="8dp"
+                            android:layout_width="wrap_content"
+                            android:text="اضافة تخفيض"
+
+                            android:layout_height="wrap_content">
+
+                        </TextView>
+                        <CheckBox
+                            android:layout_width="wrap_content"
+                            android:id="@+id/descount_forall"
+                            android:text="نفس التخفيض لكل المقاسات"
+                            android:layout_height="wrap_content">
+
+                        </CheckBox>
+                        <Spinner
+                            android:id="@+id/chos_size_update_descount"
+                            style="@style/Widget.AppCompat.Spinner"
+                            android:layout_width="300dp"
+                            android:layout_height="?attr/dropdownListPreferredItemHeight"
+                            android:layout_margin="10dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginEnd="8dp"
+                            android:background="@drawable/spinner_bg"
+                            android:dropDownWidth="300dp"
+                            android:dropDownVerticalOffset="?attr/dropdownListPreferredItemHeight"
+                            android:paddingRight="14dp"
+                            android:popupBackground="@android:color/white"
+                            android:popupElevation="3dp"
+                            android:stateListAnimator="@drawable/spinner_sla"
+                            android:layoutDirection="rtl"
+
+                            tools:listitem="@layout/spiner_layoyt"/>
+
+                        <LinearLayout
+                            android:layout_marginTop="16dp"
+                            android:layout_width="match_parent"
+                            android:orientation="vertical"
+                            android:layout_height="wrap_content">
+
+
+
+                            <EditText
+                                android:id="@+id/input_update_decount"
+
+                                android:hint="سعر التخفيض"
+                                android:layout_width="match_parent"
+                                android:layout_marginTop="16dp"
+                                android:layout_marginStart="16dp"
+                                android:layout_marginEnd="16dp"
+                                android:layout_height="wrap_content">
+
+                            </EditText>
+
+                            <CheckBox
+                                android:layout_width="wrap_content"
+                                android:text="لمدة محددة"
+                                android:id="@+id/chick_discount_time"
+
+                                android:layout_height="wrap_content">
+
+                            </CheckBox>
+                            <DatePicker
+                                android:id="@+id/datePicker_desc"
+                                android:layout_width="wrap_content"
+                                android:visibility="gone"
+                                android:layout_height="wrap_content"
+                                android:calendarViewShown="false"
+                                android:spinnersShown="true" />
+                            <android.widget.Button
+                                android:id="@+id/btn_update_decount"
+                                android:layout_width="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginEnd="16dp"
+                                android:text="حفظ التخفيض "
+                                android:background="@color/blue_lite"
+                                android:textColor="@color/white"
+                                android:layout_height="wrap_content">
+
+                            </android.widget.Button>
+
+
+                        </LinearLayout>
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:enabled="false"
+                            android:id="@+id/summary_new_decount"
+                            android:layout_height="wrap_content">
+
+                        </EditText>
+
+                    </LinearLayout>
+
+
+
+
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:padding="16dp"
+                    android:layout_margin="16dp"
+                   android:visibility="gone"
+                    android:id="@+id/updata_count_card"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_margin="8dp"
+                            android:layout_width="wrap_content"
+                            android:text="تعديل الكمية"
+                            android:layout_height="wrap_content">
+
+                        </TextView>
+                        <CheckBox
+                            android:layout_width="wrap_content"
+                            android:id="@+id/count_forall"
+                            android:text="نفس الكمية لكل المقاسات"
+                            android:layout_height="wrap_content">
+
+                        </CheckBox>
+                        <Spinner
+                            android:id="@+id/chos_size_update_count"
+                            style="@style/Widget.AppCompat.Spinner"
+                            android:layout_width="300dp"
+                            android:layout_height="?attr/dropdownListPreferredItemHeight"
+                            android:layout_margin="10dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginEnd="8dp"
+                            android:background="@drawable/spinner_bg"
+                            android:dropDownWidth="300dp"
+                            android:dropDownVerticalOffset="?attr/dropdownListPreferredItemHeight"
+                            android:paddingRight="14dp"
+                            android:popupBackground="@android:color/white"
+                            android:popupElevation="3dp"
+                            android:stateListAnimator="@drawable/spinner_sla"
+                            android:layoutDirection="rtl"
+
+                            tools:listitem="@layout/spiner_layoyt" />
+
+                        <LinearLayout
+                            android:layout_marginTop="16dp"
+                            android:layout_width="match_parent"
+                            android:orientation="horizontal"
+                            android:layout_height="wrap_content">
+
+
+
+                            <EditText
+                                android:id="@+id/input_update_count"
+                                android:layout_weight="1"
+                                android:hint="الكمية الجديدة"
+                                android:layout_width="0dp"
+                                android:layout_marginTop="16dp"
+                                android:layout_marginStart="16dp"
+                                android:layout_marginEnd="16dp"
+                                android:layout_height="wrap_content">
+
+                            </EditText>
+                            <android.widget.Button
+                                android:id="@+id/btn_update_count"
+                                android:layout_width="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginEnd="16dp"
+                                android:text="حفظ الكمية "
+                                android:background="@color/blue_lite"
+                                android:textColor="@color/white"
+                                android:layout_height="wrap_content">
+
+                            </android.widget.Button>
+
+
+                        </LinearLayout>
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:enabled="false"
+                            android:id="@+id/summary_new_count"
+                            android:layout_height="wrap_content">
+
+                        </EditText>
+
+                    </LinearLayout>
+
+
+
+
+
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:padding="16dp"
+                    android:layout_margin="16dp"
+                   android:visibility="gone"
+                    android:id="@+id/updata_prod_sect"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_margin="8dp"
+                            android:layout_width="wrap_content"
+                            android:text="نقل الى قسم اخر"
+                            android:layout_height="wrap_content">
+
+                        </TextView>
+
+                        <Spinner
+                            android:id="@+id/chos_prod_section"
+                            style="@style/Widget.AppCompat.Spinner"
+                            android:layout_width="300dp"
+                            android:layout_height="?attr/dropdownListPreferredItemHeight"
+                            android:layout_margin="10dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginEnd="8dp"
+                            android:background="@drawable/spinner_bg"
+                            android:dropDownWidth="300dp"
+                            android:dropDownVerticalOffset="?attr/dropdownListPreferredItemHeight"
+                            android:paddingRight="14dp"
+                            android:popupBackground="@android:color/white"
+                            android:popupElevation="3dp"
+                            android:stateListAnimator="@drawable/spinner_sla"
+                            android:layoutDirection="rtl"
+
+                            tools:listitem="@layout/spiner_layoyt" />
+
+
+
+
+
+
+                            <android.widget.Button
+                                android:id="@+id/btn_save_new_secto"
+                                android:layout_width="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginEnd="16dp"
+                                android:text="حفظ التغير "
+                                android:background="@drawable/btn_blue_background"
+                                android:textColor="@color/white"
+                                android:layout_height="wrap_content">
+
+                            </android.widget.Button>
+
+
+
+
+
+                    </LinearLayout>
+
+
+
+
+
+                </androidx.cardview.widget.CardView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_margin="16dp"
+                    android:layout_height="wrap_content">
+
+                    <ProgressBar
+                        android:layout_width="wrap_content"
+                        android:layout_gravity="center"
+                        android:id="@+id/prog_update"
+                        android:visibility="gone"
+                        android:layout_margin="16dp"
+                        android:layout_height="wrap_content">
+
+                    </ProgressBar>
+
+
+
+
+                    <android.widget.Button
+                        android:layout_width="wrap_content"
+                        android:text="حفظ التعديلات"
+                        android:visibility="gone"
+                        android:id="@+id/btn_save_all_updates"
+                        android:background="@drawable/blue_rounded_shape"
+                        android:textColor="@color/white"
+                        android:layout_gravity="center"
+                        android:layout_margin="16dp"
+
+                        android:layout_height="wrap_content">
+
+                    </android.widget.Button>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+        </ScrollView>
+
+    </LinearLayout>
+
+
+  </androidx.constraintlayout.widget.ConstraintLayout>

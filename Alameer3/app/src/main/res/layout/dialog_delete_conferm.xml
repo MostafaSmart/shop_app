@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="rtl"
+    android:paddingStart="16dp"
+    android:paddingEnd="16dp"
+    android:paddingBottom="24dp"
+    style="@style/DialogBackground">
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_remove_round"
+        android:layout_gravity="center|top"
+        android:scaleType="centerCrop"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="هل تريد الحذف ؟"
+            android:textColor="@color/red"
+            android:textSize="20sp"
+            android:id="@+id/delet_text"
+            android:textStyle="bold"
+            android:layout_margin="16dp"
+            android:layout_height="wrap_content">
+
+        </TextView>
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:id="@+id/prog_delete"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:layout_height="wrap_content">
+
+        </ProgressBar>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:paddingStart="24dp"
+
+            android:layout_marginTop="24dp"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <android.widget.Button
+                android:layout_width="wrap_content"
+                android:text="حذف"
+                android:id="@+id/btn_delete_conferm"
+                android:background="@drawable/btn_back_black"
+                android:textColor="@color/white"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:layout_height="wrap_content">
+
+            </android.widget.Button>
+            <android.widget.Button
+                android:layout_width="wrap_content"
+                android:text="الغاء"
+                android:id="@+id/btn_delete_cansel"
+                android:background="@drawable/items_background1"
+                android:textColor="@color/white"
+                android:layout_marginStart="24dp"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:layout_height="wrap_content">
+
+            </android.widget.Button>
+        </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="rtl"
+    android:paddingStart="16dp"
+    android:paddingEnd="16dp"
+    android:paddingBottom="24dp"
+    android:background="@drawable/dialog_background2">
+
+
+
+        <TextView
+            android:layout_margin="16dp"
+            android:layout_gravity="center"
+            android:textColor="@color/red"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:text="اضهار/اخفاء"
+            android:layout_height="wrap_content">
+
+        </TextView>
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:id="@+id/R_prod_hid_show"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:text="اظهار"
+                android:id="@+id/r_show"
+                android:layout_height="wrap_content">
+
+            </RadioButton>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:text="اخفاء"
+                android:id="@+id/r_hidden"
+                android:layout_height="wrap_content">
+
+            </RadioButton>
+        </RadioGroup>
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:id="@+id/prog_hidin"
+            android:visibility="gone"
+            android:layout_height="wrap_content">
+
+        </ProgressBar>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_margin="16dp"
+            android:layout_height="wrap_content">
+
+            <android.widget.Button
+                android:layout_width="wrap_content"
+                android:text="حفظ"
+                android:background="@drawable/btn_back_black"
+                android:textColor="@color/white"
+                android:id="@+id/btn_hidn_conferm"
+                android:layout_height="wrap_content">
+
+            </android.widget.Button>
+            <android.widget.Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="الغاء"
+                android:textColor="@color/white"
+                android:layout_marginStart="50dp"
+                android:id="@+id/btn_hidn_cansel"
+                android:background="@drawable/blue_rounded_shape"
+                >
+
+            </android.widget.Button>
+        </LinearLayout>
+
+</LinearLayout>

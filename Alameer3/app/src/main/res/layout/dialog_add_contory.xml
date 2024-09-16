@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center"
+    android:layout_margin="16dp"
+    android:padding="16dp"
+    app:cardCornerRadius="10dp"
+    android:layoutDirection="rtl"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:hint="اسم المنطقة "
+            android:id="@+id/input_contory"
+            android:layout_margin="16dp"
+            android:layout_height="wrap_content">
+
+        </EditText>
+        <EditText
+            android:layout_width="match_parent"
+            android:hint="سعر التوصيل"
+            android:id="@+id/contory_price"
+            android:layout_margin="16dp"
+
+            android:layout_height="wrap_content">
+
+        </EditText>
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="16dp"
+            android:visibility="gone"
+            android:id="@+id/prog_add_contory"
+            android:layout_height="wrap_content">
+
+        </ProgressBar>
+
+        <android.widget.Button
+            android:layout_width="wrap_content"
+            android:layout_margin="16dp"
+            android:layout_gravity="center"
+            android:text="حفظ"
+            android:background="@drawable/btn_back_black"
+            android:textColor="@color/white"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:id="@+id/btn_save_cont"
+            android:layout_height="wrap_content">
+
+        </android.widget.Button>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

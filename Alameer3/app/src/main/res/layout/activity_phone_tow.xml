@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="rtl"
+    tools:context=".activitys.activty.PhoneTowActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/crop_heder"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+
+            >
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:layoutDirection="rtl"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/heder_bake"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/black_back_icon">
+
+                </ImageView>
+
+                <TextView
+                    android:id="@+id/hedar_tital"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:text="اراسل اشعار "
+                    android:textColor="@color/black">
+
+                </TextView>
+
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/heder_no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:hint="عنوان الاشعار"></EditText>
+
+            <EditText
+                android:id="@+id/body_nov"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_margin="16dp"
+                android:hint="تفاصيل">
+
+            </EditText>
+
+            <CheckBox
+                android:id="@+id/chick_with_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="مع صورة">
+
+            </CheckBox>
+
+            <LinearLayout
+                android:id="@+id/card_whith_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <Button
+                    android:id="@+id/btn_add_image_notfigtion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="اختيار صورة"
+
+                    android:textColor="@color/white">
+
+                </Button>
+
+                <ImageView
+                    android:id="@+id/show_notf_image"
+                    android:layout_width="200dp"
+                    android:layout_height="100dp"
+                    android:scaleType="centerCrop"
+                    android:layout_gravity="center"
+                    android:visibility="gone">
+
+                </ImageView>
+            </LinearLayout>
+
+            <ProgressBar
+                android:id="@+id/prog_send_notf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+
+
+                android:visibility="gone">
+
+            </ProgressBar>
+
+            <Button
+                android:id="@+id/btn_finsh_crop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:background="@drawable/btn_back_black"
+                android:text="ارسال"
+                android:textColor="@color/white">
+
+            </Button>
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

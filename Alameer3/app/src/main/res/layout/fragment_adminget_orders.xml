@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/backGround2"
+    android:layoutDirection="rtl"
+    tools:context=".activitys.fragmints.AdmingetOrdersFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:src="@drawable/black_back_icon"
+                android:id="@+id/back_admin_ordes"
+                android:layout_height="wrap_content">
+            </ImageView>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="عرض الطلبات"
+                style="@style/textColor2Wite_black"
+                android:gravity="center"
+                android:id="@+id/showw_tii"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content">
+
+            </TextView>
+        </LinearLayout>
+        <EditText
+            android:layout_width="match_parent"
+            android:hint="بحث بالاسم"
+            android:id="@+id/serch_order"
+            android:textColor="@color/red"
+            style="@style/MyTextInputLayout"
+            android:layout_marginStart="16dp"
+            android:visibility="gone"
+            android:layout_marginEnd="16dp"
+            android:layout_height="wrap_content">
+
+        </EditText>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_margin="16dp"
+            app:cardCornerRadius="5dp"
+            style="@style/MyCard"
+            app:cardElevation="5dp"
+            android:layout_height="wrap_content">
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:id="@+id/order_type"
+               android:layout_margin="16dp"
+android:visibility="gone"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:text="الطلبات الجديدة"
+                    android:id="@+id/new_orders"
+                    style="@style/textColor2Wite_black"
+                    android:layout_height="wrap_content">
+
+                </RadioButton>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:text="جميع الطلبات"
+                    style="@style/textColor2Wite_black"
+                    android:id="@+id/all_orders"
+                    android:layout_marginStart="40dp"
+                    android:layout_height="wrap_content">
+
+                </RadioButton>
+
+            </RadioGroup>
+        </androidx.cardview.widget.CardView>
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:id="@+id/prog_order"
+            android:visibility="gone"
+            android:layout_height="wrap_content">
+
+        </ProgressBar>
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/admin_order_list"
+            android:layout_height="0dp">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

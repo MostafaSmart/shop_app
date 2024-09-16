@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/home1"
+        android:icon="@drawable/icon_home"
+        android:title="الرئيسية" />
+    <item
+        android:id="@+id/section"
+        android:icon="@drawable/icon_type"
+        android:title="الاقسام" />
+    <item
+        android:title=""/>
+    <item
+        android:id="@+id/your_order"
+
+        android:icon="@drawable/item_select_nav"
+        android:title="السلة" />
+
+    <item
+        android:id="@+id/profile"
+        android:icon="@drawable/icon_profile"
+        android:title="صفحتي" />
+
+</menu>

@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layoutDirection="rtl"
+    android:orientation="vertical"
+    style="@style/backGround2"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+
+        android:orientation="vertical"
+        android:layout_weight="1"
+        >
+        <LinearLayout
+            android:gravity="center"
+            android:layout_marginTop="100dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:visibility="gone"
+
+            android:id="@+id/pay1"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="#5F5E5E"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:id="@+id/ch_pay_when_riv"
+
+                android:layout_height="wrap_content">
+
+            </CheckBox>
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="الدفع عند الاستلام"
+                android:textColor="@color/white"
+                android:textSize="17sp"
+                android:layout_marginStart="16dp"
+
+                android:layout_height="wrap_content">
+
+            </TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:gravity="center"
+            android:layout_marginTop="30dp"
+            android:paddingTop="4dp"
+            android:paddingBottom="8dp"
+
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="#FF5F5E5E"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:id="@+id/ch_pay_whth_korimi"
+                android:layout_height="wrap_content">
+
+            </CheckBox>
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="الايداع الى حساب الكريمي"
+                android:textColor="@color/white"
+                android:textSize="17sp"
+                android:layout_marginStart="16dp"
+
+                android:layout_height="wrap_content">
+
+            </TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:id="@+id/show_acount_inform"
+            android:orientation="vertical"
+            android:padding="16dp"
+
+
+
+            android:visibility="gone"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/serch_backgrounf"
+
+            android:layout_height="wrap_content">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+
+
+                    style="@style/textColor1Wite_black"
+                    android:layout_width="wrap_content"
+                    android:text="الاسم"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+
+                <TextView
+                    style="@style/textColor2Wite_black"
+
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="صلاح عبدالجليل حمود العواضي"
+                    android:layout_width="0dp"
+                    android:layout_marginStart="50dp"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="16dp"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    style="@style/textColor1Wite_black"
+
+                    android:layout_width="wrap_content"
+                    android:text=" حساب الكريمي يمني"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+
+                <TextView
+                    style="@style/textColor2Wite_black"
+
+                    android:textSize="20sp"
+                    android:text="3060395852"
+                    android:layout_width="wrap_content"
+                    android:layout_marginStart="50dp"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+                <android.widget.Button
+                    android:layout_width="30dp"
+                    android:text="نسخ"
+                    android:id="@+id/copy_ymem"
+                    android:layout_marginStart="16dp"
+                    android:background="@color/blue_lite"
+                    android:textColor="@color/white"
+                    android:layout_height="20sp">
+
+                </android.widget.Button>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="16dp"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+
+                    style="@style/textColor2Wite_black"
+
+                    android:layout_width="wrap_content"
+                    android:text=" حساب الكريمي سعودي"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+
+                <TextView
+                    style="@style/textColor2Wite_black"
+
+                    android:textSize="20sp"
+                    android:text="3062835914"
+                    android:layout_width="wrap_content"
+                    android:layout_marginStart="35dp"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+                <android.widget.Button
+                    android:layout_width="30dp"
+                    android:text="نسخ"
+                    android:id="@+id/copy_soydy"
+                    android:layout_marginStart="16dp"
+                    android:background="@color/blue_lite"
+                    android:textColor="@color/white"
+                    android:layout_height="20sp">
+
+                </android.widget.Button>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="16dp"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    style="@style/textColor1Wite_black"
+
+                    android:layout_width="wrap_content"
+                    android:text=" حساب الكريمي دولار"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+
+                <TextView
+                    style="@style/textColor2Wite_black"
+
+                    android:textSize="20sp"
+                    android:text="3060922453"
+                    android:layout_width="wrap_content"
+                    android:layout_marginStart="50dp"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+                <android.widget.Button
+                    android:layout_width="30dp"
+                    android:text="نسخ"
+                    android:id="@+id/copy_doloar"
+                    android:layout_marginStart="16dp"
+                    android:background="@color/blue_lite"
+                    android:textColor="@color/white"
+                    android:layout_height="20sp">
+
+                </android.widget.Button>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="16dp"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:id="@+id/card_copy_hasip"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+
+
+                    style="@style/textColor2Wite_black"
+                    android:layout_width="wrap_content"
+                    android:text="رقم نقطة حاسب "
+                    android:layout_height="wrap_content">
+
+                </TextView>
+
+                <TextView
+
+                    android:textSize="20sp"
+                    style="@style/textColor2Wite_black"
+                    android:id="@+id/text_copy_hasip"
+                    android:layout_width="wrap_content"
+                    android:layout_marginStart="50dp"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+                <android.widget.Button
+                    android:layout_width="30dp"
+                    android:text="نسخ"
+                    android:id="@+id/btn_copy_hasip"
+                    android:layout_marginStart="16dp"
+                    android:background="@color/blue_lite"
+                    android:textColor="@color/white"
+                    android:layout_height="20sp">
+
+                </android.widget.Button>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:id="@+id/prog_finsh_order"
+            android:visibility="gone"
+            android:layout_height="wrap_content">
+
+        </ProgressBar>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:background="@drawable/border_backgroung"
+        android:paddingStart="8dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="8dp"
+
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="المبلغ الاجمالي"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content">
+
+        </TextView>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:textColor="@color/red"
+            android:id="@+id/show_total"
+            android:layout_marginEnd="4dp"
+
+            android:layout_height="wrap_content">
+
+        </TextView>
+    </LinearLayout>
+    <android.widget.Button
+        android:textColor="@color/white"
+        android:elevation="8dp"
+        android:layout_gravity="bottom"
+        android:id="@+id/send_the_final_requset"
+        android:layout_width="match_parent"
+        android:background="@drawable/bottom_nav_background"
+        android:text="ارسال الطلب"
+        android:layout_height="wrap_content">
+
+    </android.widget.Button>
+</LinearLayout>
