@@ -1,2 +1,4 @@
-# shop_app
-An e-commerce shopping app – a mobile Android application developed using the Kotlin Native framework
+# shop_android_app
+## An e-commerce shopping app – a mobile Android application
+### developed using: Kotlin Native framework
+### By : Mostafa Ameen
